@@ -1,5 +1,4 @@
 # random 库
-#编程/python/库
 
 * seed(num)    产生随机数种子（可以不用）
 
