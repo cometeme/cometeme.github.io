@@ -6,7 +6,7 @@
 * perf_counter()    CPU精确时间计数值（单位秒）
 * sleep(s)    让程序暂停（单位秒）
 
-strftime(tpl,tf)   tpl为格式化的字符串（参考下面），tf为time结构体（可以使用gmtime()获得）
+* strftime(tpl,tf)   tpl为格式化的字符串（参考下面），tf为time结构体（可以使用gmtime()获得）
 * %Y    年份
 * %m    月份数字
 * %B    月份名称
