@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: 'cometeme的个人博客'
 description: '很高兴能在这里与你分享我对技术和生活的思考。'
-keyword: 'cometeme, cometeme的个人博客, python'
+keyword: 'cometeme, cometeme的个人博客, python, C++, Arduino, 树莓派, raspberry'
 url: 'https://cometeme.github.io/' # your host
 
 # if you don't need baseurl, you should leave this value blank.
@@ -52,7 +52,6 @@ sns:
 #  weibo: '//weibo.com/lovecolcol'
 #  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
 #  instagram: '//www.instagram.com/steveliaocn'
-  twitter: 'https://twitter.com/cometeme'
   zhihu: 'https://www.zhihu.com/people/cometeme/activities'
   github: 'https://github.com/cometeme'
 
