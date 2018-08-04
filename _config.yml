@@ -17,9 +17,9 @@ footer:
   since: 2017
 
 # Author 配置博主信息
-author: 'Adelard Collins'
+author: 'cometeme'
 nickname: 'cometeme'
-bio: 'python 爱好者'
+bio: 'python/C++/Arduino/树莓派'
 avatar: '/assets/img/profile.png'
 
 # Search
@@ -52,6 +52,8 @@ sns:
 #  weibo: '//weibo.com/lovecolcol'
 #  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
 #  instagram: '//www.instagram.com/steveliaocn'
+  twitter: 'https://twitter.com/cometeme'
+  zhihu: 'https://www.zhihu.com/people/cometeme/activities'
   github: 'https://github.com/cometeme'
 
 # Tags 设置标签
