@@ -75,7 +75,8 @@ RSS: false
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
-permalink: /:year/:month/:day/:title.html
+#permalink: /:year/:month/:day/:title.html
+permalink:/:title.html
 
 # Plugins
 plugins: [jekyll-paginate]
