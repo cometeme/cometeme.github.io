@@ -4,7 +4,7 @@ title: 'PyInstaller 库'
 subtitle: '听说你想把 python 程序打包成 exe ？'
 date: 2018-08-05
 categories: python官方库
-cover: 'https://images.unsplash.com/photo-1520500807606-4ac9ae633574?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e99db5c13bb036d5ab3927b27cd640ce&auto=format&fit=crop&w=2550&q=80'
+cover: 'assets/img/photo-1520500807606-4ac9ae633574.jpeg'
 tags: python python库 python第三方库
 ---
 
