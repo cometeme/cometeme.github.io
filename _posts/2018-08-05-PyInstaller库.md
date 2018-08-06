@@ -40,6 +40,8 @@ python 编写的程序，除了运行速度的短板之外，还有一个问题�
 
 打包完成之后，大家会发现目录下有许多文件。其中的一些其他文件就是给各种系统平台使用的。所以假如你在使用不同的平台， `PyInstaller` 都包含了对应的文件。而且 `PyInstaller` 库不仅仅能够将官方库的文件打包，他还支持许多主流的第三方库：
 
-`libraries like PyQt, Django or matplotlib are fully supported`
+```
+libraries like PyQt, Django or matplotlib are fully supported
+```
 
 怎么样，是不是很强大呢。如果你想深入了解它的原理，或是更广泛的应用，都可以在 [PyInstaller official website](http://www.pyinstaller.org) 上找到。
