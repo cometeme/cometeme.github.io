@@ -20,7 +20,7 @@ python 编写的程序，除了运行速度的短板之外，还有一个问题�
 
 `cd /Users/cometeme/Documents/PythonCode`
 
-接下来就可以使用 `pyinstaller -F example.py` 指令，将 `example.py` 打包成单个可执行文件了。
+接下来就可以使用 `pyinstaller -F example.py` 指令，将 `example.py` 打包成单个可执行文件了。输出了以下信息（限于篇幅，只贴出了最后一行  ）：
 
 `INFO: Building EXE from out00-EXE.toc completed successfully.`
 
