@@ -28,7 +28,7 @@ python 编写的程序，除了运行速度的短板之外，还有一个问题�
 
 `INFO: Building EXE from out00-EXE.toc completed successfully.`
 
-可以看到打包完成了。
+打开文件夹，就可以找到编译完成的程序了。
 
 ### 3. pyinstaller 的可选参数
 
