@@ -22,21 +22,21 @@ tags: Jekyll Github Gitee Markdown HTML JavaScript
 
 不同的模版可能文件的个数不一样，但是一定会有这几个关键文件：
 
-  * index.html 首页的文件
+* index.html 首页的文件
 
-  * _config.yml 设置你的网站信息
+* _config.yml 设置你的网站信息
 
-  * 404.html 自定义404界面（这个一般都会有，如果没有的话就会使用最“原始”的404页面）
+* 404.html 自定义404界面（这个一般都会有，如果没有的话就会使用最“原始”的404页面）
 
-  * README.md （很重要！）作者一般会在这个文件中介绍如何配置模版。如果没有这个文件，请重新打开你下载的模版的介绍页面，下方应该会有提示。
+* README.md （很重要！）作者一般会在这个文件中介绍如何配置模版。如果没有这个文件，请重新打开你下载的模版的介绍页面，下方应该会有提示。
 
 同时，文件目录下应该也会有这些文件夹：
 
-  * _post 存放你的文章
+* _post 存放你的文章
 
-  * _layouts 网页模版文件
+* _layouts 网页模版文件
 
-  * _includes 导航栏，页脚等组件模版
+* _includes 导航栏，页脚等组件模版
 
 ### 3.修改信息
 
@@ -52,19 +52,47 @@ tags: Jekyll Github Gitee Markdown HTML JavaScript
 
 网址：
 
-  * [GitHub](https://github.com)
+* [GitHub](https://github.com)
 
-  * [Gitee](https://gitee.com)
+* [Gitee](https://gitee.com)
 
 ### 5.创建个人站点的仓库
 
-Pages 分为**项目 Pages** 和**个人 Pages** 。其中**个人 Pages** 可以通过特殊的域名访问。（比如本站是 `https://cometeme.github.io` ）要创建个人 Pages ，仓库的名称必须要符合一定的规则。
+现在我们可以创建一个仓库（ Repository ）。不过 Pages 分为**项目 Pages** 和**个人 Pages** 。其中**个人 Pages** 可以通过特殊的域名访问。（比如本站是 `https://cometeme.github.io` ）要创建个人 Pages ，仓库的名称必须要符合一定的规则。 GitHub 与 Gitee 两者的名称规则不同。
 
-  * GitHub
+* GitHub：仓库名称要求为 `username.github.io`
+ 
+* Gitee：仓库名称要求为 `username`
+ 
+> 如果想要之后直接将 GitHub 上面的项目克隆至 Gitee ，那么暂时先不要创建 Gitee 的项目。具体如何克隆我会在之后发布新的文章介绍。
 
+项目创建完成后，我们打开项目，将本地的修改过的模版文件框选拖至窗口中，等待上传完成后提交。（底下的介绍可以用默认的，建议直接提交至 master 分支）。提交完成后，就是以下的效果了：
 
+![site preview](../../../assets/screenshot/Jekyll-3.png)
 
+### 6.开启 Pages 服务
 
+* GitHub
+
+选中菜单的 `Settings` 选单，找到下方的 `GitHub Pages` 选项。（本图中已经开启，如果没有开启只需要点击相应的按钮开启即可）其中上方提示 "Your site is published at https://cometeme.github.io/" 说明已经部署完成了。这个时候你点击那个链接就可以看到自己的网页。（ GitHub 的页面更新速度较慢，有些时候做一定的更改要过段时间刷新才生效）
+
+![settings menu](../../../assets/screenshot/Jekyll-4.png)
+
+![GitHub Pages settings](../../../assets/screenshot/Jekyll-5.png)
+
+* Gitee
+
+选择菜单中的 `服务` ，进入 `码云 Pages` 页面。并在下方选中 master 分支，点击部署。部署完成后同样会给出一个链接。点开就是架好的博客了。
+
+![服务-码云 Pages ](../../../assets/screenshot/Jekyll-6.png)
+
+![码云  Pages ](../../../assets/screenshot/Jekyll-7.png)
+
+如果到这里你的网页能够成功显示，那么恭喜你，你完成了建站所需要的所有步骤。接下来就只需要对界面再进行一些微调（比如修改首页图片，自定义 `about` 页面等），并发布你的文章。
+
+### 7.添加一篇新的文章
+
+待施工。。。
 
 
 
