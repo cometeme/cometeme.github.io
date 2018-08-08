@@ -114,13 +114,13 @@ YAML 指的是一个文件的头信息。你可以用它来定义这篇文章的
 
 ```html
 ---
-    layout: post
-    title: 'Jekyll + Github = 简单搭建一个个人博客'
-    subtitle: ‘轻量化静态博客搭建指南’
-    date: 2018-08-08
-    categories: Jekyll+GitHub
-    cover: '../../../assets/img/Jekyll-header.jpeg'
-    tags: Jekyll Github Gitee Markdown HTML JavaScript
+layout: post
+title: 'Jekyll + Github = 简单搭建一个个人博客'
+subtitle: ‘轻量化静态博客搭建指南’
+date: 2018-08-08
+categories: Jekyll+GitHub
+cover: '../../../assets/img/Jekyll-header.jpeg'
+tags: Jekyll Github Gitee Markdown HTML JavaScript
 ---
 ```
 
