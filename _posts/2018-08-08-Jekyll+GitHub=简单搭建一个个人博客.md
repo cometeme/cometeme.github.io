@@ -74,17 +74,21 @@ tags: Jekyll Github Gitee Markdown HTML JavaScript
 
 * GitHub
 
-选中菜单的 `Settings` 选单，找到下方的 `GitHub Pages` 选项。（本图中已经开启，如果没有开启只需要点击相应的按钮开启即可）其中上方提示 "Your site is published at https://cometeme.github.io/" 说明已经部署完成了。这个时候你点击那个链接就可以看到自己的网页。（ GitHub 的页面更新速度较慢，有些时候做一定的更改要过段时间刷新才生效）
+选中菜单的 `Settings` 选单。
 
 ![settings menu](../../../assets/screenshot/Jekyll-4.png)
+
+找到下方的 `GitHub Pages` 选项。（本图中已经开启，如果没有开启只需要点击相应的按钮开启即可）其中上方提示 "Your site is published at https://cometeme.github.io/" 说明已经部署完成了。这个时候你点击那个链接就可以看到自己的网页。（ GitHub 的页面更新速度较慢，有些时候做一定的更改要过段时间刷新才生效）
 
 ![GitHub Pages settings](../../../assets/screenshot/Jekyll-5.png)
 
 * Gitee
 
-选择菜单中的 `服务` ，进入 `码云 Pages` 页面。并在下方选中 master 分支，点击部署。部署完成后同样会给出一个链接。点开就是架好的博客了。
+选择菜单中的 `服务` 。
 
 ![服务-码云 Pages ](../../../assets/screenshot/Jekyll-6.png)
+
+进入 `码云 Pages` 页面。并在下方选中 master 分支，点击部署。部署完成后同样会给出一个链接。点开就是架好的博客了。
 
 ![码云  Pages ](../../../assets/screenshot/Jekyll-7.png)
 
