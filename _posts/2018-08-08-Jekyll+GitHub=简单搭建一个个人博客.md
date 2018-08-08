@@ -2,7 +2,7 @@
 layout: post
 title: 'Jekyll + Github = 简单搭建一个个人博客'
 subtitle: ‘轻量化静态博客搭建指南’
-date: 2018-08-07
+date: 2018-08-08
 categories: Jekyll+GitHub
 cover: '../../../assets/img/Jekyll-header.jpeg'
 tags: Jekyll Github Gitee Markdown HTML JavaScript
@@ -64,7 +64,7 @@ tags: Jekyll Github Gitee Markdown HTML JavaScript
  
 * Gitee：仓库名称要求为 `username`
  
-> 如果想要之后直接将 GitHub 上面的项目克隆至 Gitee ，那么暂时先不要创建 Gitee 的项目。具体如何克隆我会在之后发布新的文章介绍。
+> 如果想要之后直接将 GitHub 上面的项目克隆至 Gitee ，可以先安装上面的规则创建一个空的项目，具体如何克隆我会在之后发布新的文章介绍。
 
 项目创建完成后，我们打开项目，将本地的修改过的模版文件框选拖至窗口中，等待上传完成后提交。（底下的介绍可以用默认的，建议直接提交至 master 分支）。提交完成后，就是以下的效果了：
 
@@ -106,9 +106,40 @@ tags: Jekyll Github Gitee Markdown HTML JavaScript
 
 > 一般更改完图片，或是发布一篇新的文章后，网页需要较长的时间来更新。（也就是说有可能你刷新几遍发现图片没换）这时千万不要以为，等待1-2分钟之后再刷新试试）
 
-### 8.什么是 Jekyll YAML？
+### 8.什么是 YAML ？
+
+YAML 指的是一个文件的头信息。你可以用它来定义这篇文章的写作时间、标题、引用图片等等。每个文章都必须要有头信息才能被模版正确地读取。
+
+头信息的内容被夹在两行 `---` 之间，你需要将它放在整个文章的最上方。每个模版对于 YAML 的定义不同。一般在你的模版中的 `_post` 文件夹中一定有几篇预置的文章。用文本编辑器打开它，你就能看到你所需要的头信息了，比如说我的模版：
+
+```
+---
+    layout: post
+    title: 'Jekyll + Github = 简单搭建一个个人博客'
+    subtitle: ‘轻量化静态博客搭建指南’
+    date: 2018-08-08
+    categories: Jekyll+GitHub
+    cover: '../../../assets/img/Jekyll-header.jpeg'
+    tags: Jekyll Github Gitee Markdown HTML JavaScript
+---
+```
+
+不同的模版参数的格式都不同，不过以我的为例，其中这些参数有以下作用：
+
+* layout：选定一个模版文件，一般不需要改
+* title：文章的标题名
+* subtitle：文章的小标题
+* date：文章的时间
+* catagories：文章的分类，不同分类可用空格风格
+* cover：文章的封面图片位置
+* tags：文章的标签。类似于catagories，可以分的更细一些
+
+经过上面的介绍后，我们了解 YAML 的作用。在学习了 YAML 之后，我们就能开始创建文章了！
+
+### 9.创建你的第一篇文章
 
 待施工。。。
+
 
 
 
