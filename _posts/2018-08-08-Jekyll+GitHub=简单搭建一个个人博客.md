@@ -3,7 +3,7 @@ layout: post
 title: 'Jekyll + Github = 简单搭建一个个人博客'
 subtitle: ‘轻量化静态博客搭建指南’
 date: 2018-08-08
-categories: Jekyll+GitHub
+categories: Jekyll
 cover: '../../../assets/img/Jekyll-header.jpeg'
 tags: Jekyll Github Gitee Markdown HTML JavaScript
 ---
