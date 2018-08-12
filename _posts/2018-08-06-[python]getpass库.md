@@ -4,7 +4,7 @@ title: '[python] getpass 库'
 subtitle: '如何才能在控制台中让用户输入的密码隐藏？'
 date: 2018-08-06
 categories: python官方库
-cover: '../../../assets/img/getpass-header.jpeg'
+cover: '../../../assets/img/getpass-header.jpg'
 tags: python python库
 ---
 

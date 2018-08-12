@@ -4,7 +4,7 @@ title: '[python] venv 库'
 subtitle: '创建一个轻量化的虚拟环境'
 date: 2018-08-07
 categories: python官方库
-cover: '../../../assets/img/venv-header.jpeg'
+cover: '../../../assets/img/venv-header.jpg'
 tags: python python库
 ---
 
