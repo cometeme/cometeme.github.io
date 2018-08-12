@@ -19,8 +19,8 @@ tags: python python库
 那么首先，我们要用 `PrettyPrinter` 函数来定义一个对象。
 
 ```python
-    import pprint
-    pp = pprint.PrettyPrinter(width = 80)
+  import pprint
+  pp = pprint.PrettyPrinter(width = 80)
 ```
 
 这样我们就定义好了一种输出的对象了。大家可能很好奇其中的 `width` 参数是做什么用的。其实 `PrettyPrinter` 中的参数可不止这一个。
@@ -37,19 +37,19 @@ tags: python python库
 在上面定义好了 PrettyPrinter 对象之后，我们就可以用它来进行输出了。我们调整几个参数，看看它的实际效果。
 
 ```python
-    import pprint
-    ls = ['abc', 'def', 'ghj', ['abc', 'def']]
-    pp = pprint.PrettyPrinter(width = 20)
-    pp.pprint(ls)
+  import pprint
+  ls = ['abc', 'def', 'ghj', ['abc', 'def']]
+  pp = pprint.PrettyPrinter(width = 20)
+  pp.pprint(ls)
  ```
  
  先不加 `compact = True` ，理论上第一组 `abc` 和 `def` 其实是可以输出在同一行的。但是因为 `pprint` 希望让显示的层次变得清晰，它并不会这样输出。而是变成下面的那样：
  
  ```python
-    ['abc',
-    'def',
-    'ghj',
-    ['abc', 'def']]
+  ['abc',
+  'def',
+  'ghj',
+  ['abc', 'def']]
  ```
  
  可以看到，前三组层次并列的数据被输出在了不同的行，而最后两组被输出在了同一行。
@@ -57,18 +57,18 @@ tags: python python库
  如果我们加上 `compact = True` 这个参数呢？
  
 ```python
-    import pprint
-    ls = ['abc', 'def', 'ghj', ['abc', 'def']]
-    pp = pprint.PrettyPrinter(width=20, compact=True)
-    pp.pprint(ls)
+  import pprint
+  ls = ['abc', 'def', 'ghj', ['abc', 'def']]
+  pp = pprint.PrettyPrinter(width=20, compact=True)
+  pp.pprint(ls)
 ```
  
 可以看到，在满足宽度限制的情况下，前两个数据被输出在了同一行，而第三个数据因为宽度超出而自动分配到了下一行。
  
 ```python
-    ['abc', 'def',
-    'ghj',
-    ['abc', 'def']]
+  ['abc', 'def',
+  'ghj',
+  ['abc', 'def']]
 ```   
  
 其实看到了上面这样的显示结果，一般来说不推荐大家使用 `compact = True` 这个参数，因为它会让可读性变得有些差。（不过如果你的列表是一维的，或者数据都十分整齐，那么 `compact = True` 的确可以让列表的输出变得更紧凑）
@@ -76,19 +76,19 @@ tags: python python库
 那么看了上面几个参数，还有 `indent` 参数没有介绍到。我们还是以不包含 `compact` 为例，用同样的数据进行测试：
  
 ```python
-    import pprint
-    ls = ['abc', 'def', 'ghj', ['abc', 'def']]
-    pp = pprint.PrettyPrinter(indent = 2, width=20)
-    pp.pprint(ls)
+  import pprint
+  ls = ['abc', 'def', 'ghj', ['abc', 'def']]
+  pp = pprint.PrettyPrinter(indent = 2, width=20)
+  pp.pprint(ls)
 ```
 
 输出在每组数据之前加上了两个空格，其实 `indent` 这个参数可以让数据看起来不那么密集，不过加不加就看个人喜好了。
 
 ```python
-    [ 'abc',
-      'def',
-      'ghj',
-      ['abc', 'def']]
+  [ 'abc',
+    'def',
+    'ghj',
+    ['abc', 'def']]
 ```
 
 最后是 `depth` 参数了。其实它也是特别的实用。（只不过除了在做网络类的程序外，其他地方不是经常用到）
@@ -96,19 +96,19 @@ tags: python python库
 比如我用一个四层嵌套的列表，然后我将最大深度 `depth` 设置为 `2` ，来测试一下输出效果：
 
 ```python
-    import pprint
-    ls = ['abc', 'def', 'ghj', ['abc', ['abc', ['abc', 'def'], 'def'], 'def']]
-    pp= pprint.PrettyPrinter(indent = 2, depth = 2, width=20)
-    pp.pprint(ls)
+  import pprint
+  ls = ['abc', 'def', 'ghj', ['abc', ['abc', ['abc', 'def'], 'def'], 'def']]
+  pp= pprint.PrettyPrinter(indent = 2, depth = 2, width=20)
+  pp.pprint(ls)
 ```
 
 ```python
+  [ 'abc',
+    'def',
+    'ghj',
     [ 'abc',
-      'def',
-      'ghj',
-      [ 'abc',
-        [...],
-        'def']]
+      [...],
+      'def']]
 ```
 
 可以看到过于深层嵌套的部分就被省略掉了。这样其实也有助于我们阅读结果。
