@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'PyInstaller 库'
+title: '[python] PyInstaller 库'
 subtitle: '听说你想把 python 程序打包成 exe ？'
 date: 2018-08-05
 categories: python第三方库
