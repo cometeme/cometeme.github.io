@@ -76,7 +76,7 @@ RSS: false
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
-permalink: /:categories/:year/:title/
+permalink: /:categories/:year/:month/:title.html
 #permalink: /:title.html
 
 # Plugins
