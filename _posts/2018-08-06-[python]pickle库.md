@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'pickle 库'
+title: '[python] pickle 库'
 subtitle: '将数据腌制成完美的泡菜'
 date: 2018-08-06
 categories: python官方库
