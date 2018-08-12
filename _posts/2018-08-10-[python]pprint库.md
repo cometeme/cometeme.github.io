@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'pprint 库'
+title: '[python] pprint 库'
 subtitle: '整齐地输出列表或是字典'
 date: 2018-08-10
 categories: python官方库
