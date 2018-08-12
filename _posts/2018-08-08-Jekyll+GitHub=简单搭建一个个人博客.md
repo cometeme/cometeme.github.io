@@ -5,7 +5,7 @@ subtitle: ‘轻量化静态博客搭建指南’
 date: 2018-08-08
 categories: Jekyll
 cover: '../../../assets/img/Jekyll-header.jpeg'
-tags: Jekyll Github Gitee Markdown HTML JavaScript
+tags: Jekyll Github Gitee Markdown HTML
 ---
 
 在我成功试水，搭建了自己的个人博客后，我体会到了 [Jekyll](https://www.jekyll.com.cn) 制作网站的轻便性。而 [GitHub Pages](https://pages.github.com) 对 Jekyll 的支持，又省去了建站时服务器和域名的搭建。在查阅网上的资料时，大牛们都是先在本地做好 Ruby + Jekyll 的环境，调试完成后再上传至 GitHub 上。但是我在安装 Jekyll 这一步卡住了。无奈之下我寻找了一种更加“轻量化”的解决方法：**直接在 GitHub 上对模版进行编辑和调试**，这样我们就不需要在本地搭建环境。不过因为 GitHub 在国内的访问速度较慢，所以这篇教程**同时**介绍 GitHub 和 Gitee 的建站方法。
