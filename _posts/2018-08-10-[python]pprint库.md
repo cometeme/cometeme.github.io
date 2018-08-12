@@ -4,7 +4,7 @@ title: '[python] pprint 库'
 subtitle: '整齐地输出列表或是字典'
 date: 2018-08-10
 categories: python官方库
-cover: '../../../assets/img/pprint-header.jpeg'
+cover: '../../../assets/img/pprint-header.jpg'
 tags: python python库
 ---
 
