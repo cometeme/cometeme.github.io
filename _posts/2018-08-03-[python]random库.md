@@ -89,7 +89,7 @@ random 库是 python 自带库中非常常用的一个库，它可以产生许�
 
 接下来就是一个更有趣的函数了， `shuffle(seq)` ，它可以将一个序列打乱。注意它会将数列**原地打乱**，意思就是说，运行完毕后 `seq` 保存的就是打乱后的序列，而将这个函数的结果直接输出或者赋值给其他变量都是**不可行**的。
 
-**错误**用法：
+**错误** 用法：
 
 ```python
   import random
@@ -111,7 +111,3 @@ random 库是 python 自带库中非常常用的一个库，它可以产生许�
 ### 结语与其他文档
 
 以上就是本教程的全部内容了。 random 库还有其他拓展的内容，包括以上介绍的 `choices` 、 `shuffle` 函数都还有额外的参数可供选择。具体可以参考 [9.6. random — Generate pseudo-random numbers](https://docs.python.org/3/library/random.html) 。
-
-
-
-

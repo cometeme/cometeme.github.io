@@ -8,7 +8,7 @@ cover: '../../../assets/img/wordcloud-header.jpg'
 tags: python python库 python第三方库
 ---
 
-了解 python 时，别人会告诉你 python 的一个十分常见的作用就是“大数据分析”。不过接触了 python 的基础语法之后，你可能觉得它好像与“数据处理”没有太多的关系。的确， python 基础库的功能较为有限，不过 python 的强大之处其实在于它丰富多彩的第三方库。在 [PyPI](https://pypi.org) 这个平台上，你可以看到绝大多数第三方库的资料。而今天我们的主角，就是 wordcloud 库。
+了解 python 时，别人会告诉你 python 的一个十分常见的作用就是“大数据分析”。不过接触了 python 的基础语法之后，你可能觉得它好像与“数据处理”没有太多的关系。的确， python 基础库的功能较为有限，不过 python 的强大之处其实在于它丰富多彩的第三方库。在 [PyPI](https://pypi.org) 这个平台上，你可以看到绝大多数第三方库的资料。而今天我们的主角是 wordcloud 库。
 
 ### 1.wordcloud 库的安装
 
@@ -59,3 +59,36 @@ wordcloud 库中有三个常用的函数： `WordCloud()` 、 `generate()` 、 `
 ![WordCloudSimple](../../../assets/screenshot/wordcloud-1.png)
 
 怎么样，是不是很神奇。只需要简单的三个函数，我们就能实现一个词云的输出。当然了，如果单纯地使用默认参数，那未免也太单调了。所以我们还需要进行自定义。
+
+### 3.自定义词云
+
+* width
+指定词云对象生成图片的宽度，默认400像素
+
+* height
+指定词云对象生成图片的高度，默认200像素
+
+* min_font_size
+指定词云中字体的最小字号，默认4号
+
+* max_font_size
+指定词云中字体的最大字号，根据高度自动调节
+
+* font_step
+指定词云中字体字号的步进间隔，默认为1
+
+* font_path
+指定字体文件的路径，默认None
+
+* max_words
+指定词云显示的最大单词数量，默认200
+
+* stop_words
+指定词云的排除词列表，即不显示的单词列表
+
+* background_color
+指定词云图片的背景颜色，默认为黑色
+`wc=wordcloud.WordCloud(background_color = “white”)`
+
+
+待施工
