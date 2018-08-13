@@ -1,6 +1,6 @@
 # Site settings 配置站点
 title: 'cometeme的个人博客'
-description: '很高兴能在这里与你分享我对技术和生活的思考。'
+description: '分享一些编程的学习笔记'
 keyword: 'cometeme, cometeme的个人博客, python, C++, Arduino, 树莓派, raspberry'
 url: 'https://cometeme.github.io/' # your host
 
