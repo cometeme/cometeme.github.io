@@ -25,10 +25,17 @@ tags: python python库
 
 这样我们就定义好了一种输出的对象了。大家可能很好奇其中的 `width` 参数是做什么用的。其实 `PrettyPrinter` 中的参数可不止这一个。
 
-* `width` 定义最大的宽度（如果超过这个宽度会自动换行）（默认的宽度为80）
-* `indent` 定义缩减的空格数（默认为1）
-* `compact` 如果为 `True` 则将同一种元素压缩到一行（默认为 `False` ）
-* `depth` 定义最大的嵌套数。如果列表中超过一定的深度就以 `...` 显示
+* `width`
+定义最大的宽度（如果超过这个宽度会自动换行）（默认的宽度为80）
+
+* `indent`
+定义缩减的空格数（默认为1）
+
+* `compact`
+如果为 `True` 则将同一种元素压缩到一行（默认为 `False` ）
+
+* `depth`
+定义最大的嵌套数。如果列表中超过一定的深度就以 `...` 显示
 
 看完上面的介绍，是不是有一点蒙？没事，下面我们就要介绍 `pprint()` 函数，用它就可以进行输出。这样我们就可以测试一下各个参数的功能了。
 
@@ -41,40 +48,40 @@ tags: python python库
   ls = ['abc', 'def', 'ghj', ['abc', 'def']]
   pp = pprint.PrettyPrinter(width = 20)
   pp.pprint(ls)
- ```
- 
- 先不加 `compact = True` ，理论上第一组 `abc` 和 `def` 其实是可以输出在同一行的。但是因为 `pprint` 希望让显示的层次变得清晰，它并不会这样输出。而是变成下面的那样：
- 
- ```python
+```
+
+先不加 `compact = True` ，理论上第一组 `abc` 和 `def` 其实是可以输出在同一行的。但是因为 `pprint` 希望让显示的层次变得清晰，它并不会这样输出。而是变成下面的那样：
+
+```python
   ['abc',
   'def',
   'ghj',
   ['abc', 'def']]
- ```
- 
- 可以看到，前三组层次并列的数据被输出在了不同的行，而最后两组被输出在了同一行。
- 
- 如果我们加上 `compact = True` 这个参数呢？
- 
+```
+
+可以看到，前三组层次并列的数据被输出在了不同的行，而最后两组被输出在了同一行。
+
+如果我们加上 `compact = True` 这个参数呢？
+
 ```python
   import pprint
   ls = ['abc', 'def', 'ghj', ['abc', 'def']]
   pp = pprint.PrettyPrinter(width=20, compact=True)
   pp.pprint(ls)
 ```
- 
+
 可以看到，在满足宽度限制的情况下，前两个数据被输出在了同一行，而第三个数据因为宽度超出而自动分配到了下一行。
- 
+
 ```python
   ['abc', 'def',
   'ghj',
   ['abc', 'def']]
 ```   
- 
+
 其实看到了上面这样的显示结果，一般来说不推荐大家使用 `compact = True` 这个参数，因为它会让可读性变得有些差。（不过如果你的列表是一维的，或者数据都十分整齐，那么 `compact = True` 的确可以让列表的输出变得更紧凑）
- 
+
 那么看了上面几个参数，还有 `indent` 参数没有介绍到。我们还是以不包含 `compact` 为例，用同样的数据进行测试：
- 
+
 ```python
   import pprint
   ls = ['abc', 'def', 'ghj', ['abc', 'def']]
