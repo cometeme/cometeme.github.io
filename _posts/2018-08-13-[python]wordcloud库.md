@@ -56,7 +56,7 @@ wordcloud 库中有三个常用的函数： `WordCloud()` 、 `generate()` 、 `
 
 运行完成后，可以看到生成了这样一张图片：
 
-![WordCloudSimple](../../../assets/screenshot/wordcloud-1.png)
+![WordCloudSimpleBlack](../../../assets/screenshot/wordcloud-1.png)
 
 怎么样，是不是很神奇。只需要简单的三个函数，我们就能实现一个词云的输出。当然了，如果单纯地使用默认参数，那未免也太单调了。所以我们还需要进行自定义。
 
@@ -71,7 +71,7 @@ wordcloud 库中有三个常用的函数： `WordCloud()` 、 `generate()` 、 `
 指定词云对象生成图片的高度，默认200像素
 
 * min_font_size
-指定词云中字体的最小字号，默认4号
+指定词云中字体的最小字号，默认为4
 
 * max_font_size
 指定词云中字体的最大字号，根据高度自动调节
@@ -80,19 +80,66 @@ wordcloud 库中有三个常用的函数： `WordCloud()` 、 `generate()` 、 `
 指定词云中字体字号的相差间隔，默认为1
 
 * font_path
-指定字体文件的路径，默认None
+指定字体文件的路径，默认None（可以将字体文件放在统一目录下引用）
 
 * max_words
 指定词云显示的最大单词数量，默认200
-
-* stop_words
-指定词云的排除词列表，即不显示的单词**列表**
 
 * background_color
 指定词云图片的背景颜色，默认为黑色，若要指定为白色，可设置为：
 `wc=wordcloud.WordCloud(background_color = “white”)`
 
 * mask
-设定词云的遮罩（限定词云的范围）
+设定词云的遮罩（限定词云的形状）
 
-待施工
+所以，让我们试试将输出的图片改大一些。背景换为白色。
+
+```python
+  wc = WordCloud(height=600, width=800, background_color='white')
+```
+
+我们应该会得到如下的图片：
+
+![WordCloudSimpleWhite](../../../assets/screenshot/wordcloud-2.png)
+
+是不是看起来比上面的黑色图片好多了。可能你会发现这个词云中没有 200 个单词。其实这是因为我挑的文本过短，而且 wordcloud 本身会过滤一些较短的单词，所以导致最后输出的结果较少了。
+
+那么还有个 `mask` 属性没有讲，因为它比上面这些稍微复杂一些，所以我们单独整理：
+
+### 4.为词云设置 mask 属性
+
+为词云设置 `mask` 属性时，我们需要用到 scipy.misc 库中的 `imread` 这个函数。它是一个图像操作的库，在这里我们只需要知道它可以读取一个图像就行了。
+
+让我们看一下下面这样一个代码：
+
+```python
+  from wordcloud import WordCloud
+  from scipy.misc import imread
+  mask = imread(“WWDC18.png”)
+
+  intxtname = 'in.txt'
+  outpngname = 'WWDC18wordcloud.png'
+
+  infile = open(intxtname, 'r', encoding="utf-8")
+  intxt = infile.read()
+
+  wc = WordCloud(height=600, width=800, background_color='white', mask=mask)
+
+  wc.generate(intxt)
+  wc.to_file(outpngname)
+  infile.close()
+```
+
+可以看到，我们需要先导入 `imread`，然后用 `imread` 读取一个图片文件。之后我们将读取到的文件设置为 wordcloud 对象的 `mask` 属性。那这样可以实现怎么样的一个效果呢？
+
+![WWDC18.png](../../../assets/screenshot/wordcloud-3.png)
+
+它可以读入上面这样一个图片，最后输出以下的图案：
+
+![WWDC18wordclou.png](../../../assets/screenshot/wordcloud-4.png)
+
+只需要多加几步，便可以实现遮罩的效果了。 wordcloud 这个库的一个特点就是简单易用。
+
+### 结语与其他文档
+
+这样我们就完成了 wordcloud 的简单介绍了。当然，它还有许多更高级的用法，比如让生成的词云颜色符合原图的颜色，给遮罩描边等功能，都可以在它的 GitHub 示例中找到： [A little word cloud generator in Python](https://github.com/amueller/word_cloud)
