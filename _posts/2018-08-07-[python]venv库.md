@@ -3,7 +3,7 @@ layout: post
 title: '[python] venv 库'
 subtitle: '创建一个轻量化的虚拟环境'
 date: 2018-08-07
-categories: python官方库
+categories: python
 cover: '../../../assets/img/venv-header.jpg'
 tags: python python库
 ---
@@ -52,7 +52,7 @@ python 自带了一个非常简便的虚拟化库 - venv 。在 python 3.5 及�
   - bash/zsh	`$ source <venv>/bin/activate`
 
   - fish	`$ . <venv>/bin/activate.fish`
-  
+
   - csh/tcsh	`$ source <venv>/bin/activate.csh`
 
 - Windows
@@ -60,10 +60,10 @@ python 自带了一个非常简便的虚拟化库 - venv 。在 python 3.5 及�
   - cmd.exe	`C:\> <venv>\Scripts\activate.bat`
 
   - PowerShell	`PS C:\> <venv>\Scripts\Activate.ps1`
-  
+
 ```python
   cometeme$ source /Users/cometeme/Documents/example/bin/activate
-  (example)cometeme$ 
+  (example)cometeme$
 ```
 
 可以看到前面多了一个(example)的提示，说明我们已经进入到虚拟环境中了。在虚拟环境里，我们可以像正常一样操作里面的文件，或是安装第三方库，只不过这一些都只会影响到本地的内容了。
@@ -89,11 +89,3 @@ python 自带了一个非常简便的虚拟化库 - venv 。在 python 3.5 及�
 ### 结语与其他文档
 
 短短的几十行， venv 的这个库的一些简单使用方法就已经介绍完了，简洁却又方便，这一直是 python 的特性。其实除了可以在控制台中使用外，它还可以作为一个模块在程序中使用。不过一般情况下我们只需要用控制台就可以了。如果大家还想深入研究，可以查看 [29.3. venv — Creation of virtual environments](https://docs.python.org/3/library/venv.html) 。
-
-
-
-
-
-
-
-
