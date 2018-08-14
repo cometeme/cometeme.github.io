@@ -3,7 +3,7 @@ layout: post
 title: '[python] time 库'
 subtitle: '获取当前时间、时间格式化输出、测量运行时长'
 date: 2018-08-04
-categories: python官方库
+categories: python
 cover: '../../../assets/img/time-header.jpg'
 tags: python python库
 ---

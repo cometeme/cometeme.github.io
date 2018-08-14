@@ -3,7 +3,7 @@ layout: post
 title: '[python] wordcloud 库'
 subtitle: '将一串文本转化为词云'
 date: 2018-08-13
-categories: python第三方库
+categories: python
 cover: '../../../assets/img/wordcloud-header.jpg'
 tags: python python库 python第三方库
 ---

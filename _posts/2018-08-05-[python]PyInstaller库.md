@@ -3,7 +3,7 @@ layout: post
 title: '[python] PyInstaller 库'
 subtitle: '听说你想把 python 程序打包成 exe ？'
 date: 2018-08-05
-categories: python第三方库
+categories: python
 cover: '../../../assets/img/PyInstaller-header.jpg'
 tags: python python库 python第三方库
 ---
