@@ -34,26 +34,40 @@ $ redis-server
 
 ![Redis_bash](../../../assets/screenshot/redis-1.png)
 
->在调试完成后，我们应该使用conf配置文件打开 Redis 服务器，不然会有安全性隐患。
+> 在调试完成后，我们应该使用conf配置文件打开 Redis 服务器，不然会有安全性隐患。
 
 在 python 中，我们可以通过定义一个 Redis 对象来实现对 Redis 数据库的连接。这里我们先使用 IDLE 的交互式编程模式来完成。
 
 ```python
 >>> import redis
->>> database = redis.Redis(host='localhost', port=6379)
+>>> database = redis.Redis()
 ```
 
-其中， `Redis` 这个函数其实还有其他可选参数，`password` 和 `db` ，其中在服务器设置了密码时需要设置 `password` 参数。如果需要分多个数据仓库，可以设置 `db` 参数，不过默认为 `db = 0` 。
+只需要一个简单的函数，我们就能连接我们的服务器了。
+
+其中， `Redis` 这个函数其实还有可选参数:
+
+-   host
+    设置 Redis 服务器的 IP 位置，默认为 `localhost`
+
+-   port
+    设置 Redis 服务器的端口，默认为 `6379`
+
+-   db
+    设置使用的数据库标号，默认为 `db=0`
+
+-   password
+    设置 Redis 服务器的密码，如果没有设置密码就不用填
 
 ### 3. 对数据库进行操作
 
 Redis 的操作非常简单，最基础的只有两个函数， `set()` 和 `get()` 。
 
-* redis.set(key, value)
-将 key 对应的值设置为 value ，如果设置成功就返回 `True`
+-   redis.set(key, value)
+    将 key 对应的值设置为 value ，如果设置成功就返回 `True`
 
-* redis.get(key)
-返回 key 对应的值，如果 key 不存在，则返回 None
+-   redis.get(key)
+    返回 key 对应的值，如果 key 不存在，则返回 None
 
 让我们先来试一试这两个函数：
 
@@ -63,6 +77,7 @@ True
 >>> database.get('username')
 b'cometeme'
 ```
+
 可以看到，虽然的确成功返回了我们存入的信息，但是前面多了一个 `b'` ，这代表的是这是 byte 形式的值。那么怎么样才能还原成正常的数据呢？
 
 其实只需要加个 `decode` 函数就可以恢复为正常的数据。
@@ -83,4 +98,33 @@ b'cometeme'
 
 ### 4. 写一个简单的 Redis 操作模块
 
-待施工...
+为了方便之后的使用，我们可以将一些 Redis 数据库的操作写成一个模块，这样可以便于之后调用。我们可以新建一个叫 redisOperation.py 的文件，并且定义一个类。
+
+```python
+import redis
+
+
+class redisOperation():
+    def __init__(self, host='localhost', port=6379, db=0,password=""):
+        self.database = redis.Redis(host=host, port=port, db=db, password=password)
+        print("Successfully connect to Redis Server.")
+
+    def setData(self, key, value):
+        self.database.set(key, value)
+
+    def getData(self, key):
+        data = self.database.get(key)
+        if data is None:
+            return None
+        else:
+            return data.decode()
+
+    def getKeys(self):
+        byteKeys = self.database.keys()
+        rawKeys = []
+        for key in byteKeys:
+            rawKeys.append(key.decode())
+        return rawKeys
+```
+
+首先在初始化的位置，我们设定了默认参数，这样可以以最简单的方式来测试一个服务器。 `setData()` 函数没有任何改变，但是 `getData()` 和 `getKeys()` 函数都加入了解码的过程，这样只需要调用这个函数就可以直接返回原始值，减少了重复的工作。

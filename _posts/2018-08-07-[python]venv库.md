@@ -46,20 +46,19 @@ $ python3 -m venv <directory>
 
 成功创建了虚拟化的环境之后，我们需要先**进入**这个环境（不然 pip 还是会装在项目外面）。我们可以使用以下指令来进入环境。其中 `<venv>` 是你项目文件夹的路径。
 
+-   MacOS 或 Linux
 
-- MacOS 或 Linux
+    -   bash/zsh	`$ source <venv>/bin/activate`
 
-    - bash/zsh	`$ source <venv>/bin/activate`
+    -   fish	`$ . <venv>/bin/activate.fish`
 
-    - fish	`$ . <venv>/bin/activate.fish`
+    -   csh/tcsh	`$ source <venv>/bin/activate.csh`
 
-    - csh/tcsh	`$ source <venv>/bin/activate.csh`
+-   Windows
 
-- Windows
+    -   cmd.exe	`C:\> <venv>\Scripts\activate.bat`
 
-    - cmd.exe	`C:\> <venv>\Scripts\activate.bat`
-
-    - PowerShell	`PS C:\> <venv>\Scripts\Activate.ps1`
+    -   PowerShell	`PS C:\> <venv>\Scripts\Activate.ps1`
 
 ```python
 cometeme$ source /Users/cometeme/Documents/example/bin/activate

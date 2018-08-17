@@ -40,14 +40,14 @@ INFO: Building EXE from out00-EXE.toc completed successfully.
 
 其实，除了刚刚的 `-F` ， `pyinstaller` 这个指令还有许多可选参数，比如：
 
-* -F
-生成单个可执行文件
+-   \-F
+    生成单个可执行文件
 
-* -w
-去掉控制台窗口，适用于GUI界面
+-   \-w
+    去掉控制台窗口，适用于GUI界面
 
-* -i
-设置图标
+-   \-i
+    设置图标
 
 ### 结语与其他文档
 

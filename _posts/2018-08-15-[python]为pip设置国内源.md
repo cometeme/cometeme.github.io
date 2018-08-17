@@ -16,9 +16,9 @@ tags: python pip
 
 因为之前更换 `apt-get` 的源时用的就是清华源和阿里云的源，所以我优先寻找到了这两个。
 
-阿里云 https://mirrors.aliyun.com/pypi/simple/
+阿里云 <https://mirrors.aliyun.com/pypi/simple/>
 
-清华 https://pypi.tuna.tsinghua.edu.cn/simple
+清华 <https://pypi.tuna.tsinghua.edu.cn/simple>
 
 ### 2. 在使用 pip 指令时切换源
 
@@ -28,7 +28,7 @@ tags: python pip
 $ sudo -H pip install tensorflow -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
->如果你使用的源为 http ，那么会提示源不被信任。你只需要按照提示，在后面加上 --trusted-host <host> 就可以了
+> 如果你使用的源为 http ，那么会提示源不被信任。你只需要按照提示，在后面加上 --trusted-host <host> 就可以了
 
 可以看到，下载速度比直接下载快了许多，像 tensorflow 这种比较大的库都可以很快下载。
 
