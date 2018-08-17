@@ -128,3 +128,73 @@ class redisOperation():
 ```
 
 首先在初始化的位置，我们设定了默认参数，这样可以以最简单的方式来测试一个服务器。 `setData()` 函数没有任何改变，但是 `getData()` 和 `getKeys()` 函数都加入了解码的过程，这样只需要调用这个函数就可以直接返回原始值，减少了重复的工作。
+
+接下来我们就可以使用自己写的库了：
+
+```python
+from redisOperation import redisOperation
+
+
+r = redisOperation()
+r.setData('username', 'cometeme')
+print(r.getData('username'))
+```
+
+但是，在有一类情况下，单纯使用 `decode()` 会出现问题：当你存入的数据不是字符串类型，但是使用 `decode()` 之后返回的是一个字符串。如果你想要使用它，你就必须知道当初存进去的是什么类型，再决定是否需要使用 `eval()` 函数，这无疑增加了非文本类型的存储（特别是文本与非文本类型混合存储）时的解码难度。
+
+```python
+>>> r.setData('username', [10,20,90,(30,10,29)])
+>>> r.getData('username')
+'[10, 20, 90, (30, 10, 29)]'
+```
+
+其实问题在于，我们存入一个值，而取出时为 byte 类型。这意味着我们存入时会先将信息变为 byte 类型，就是这一步导致之后我们无法区分数据类型。那怎样才能让我们的数据“**原样进，原样出**”呢？等等，是不是想到了我们之前介绍的 pickle 库？
+
+### 5. redis + pickle
+
+其实要使用 pickle 库完成数据的存储，只需要简单的更改上面的代码。在介绍 pickle 库时，我提到了有两个不常用的函数： `dumps()` 和 `loads()` ，这两个就是用来生成与还原二进制流的。虽然我说他们不常用，但是在这里他们就派上了用场。我们只需要在存入时通过 `dumps()` 将任意的 python 变量转化为二进制流，而在取出时用 `loads()` 将其完整的取出，那就可以实现任意类型的 python 变量存储。
+
+更新后的代码如下，其实只改动了很小一部分。
+
+```python
+import redis
+import pickle
+
+
+class redisOperation():
+    def __init__(self, host='localhost', port=6379, db=0, password=""):
+        self.database = redis.Redis(
+            host=host, port=port, db=db, password=password)
+        print("Successfully connect to Redis Server.")
+
+    def setData(self, key, value):
+        self.database.set(key, pickle.dumps(value))
+
+    def getData(self, key):
+        data = self.database.get(key)
+        if data is None:
+            return None
+        else:
+            return pickle.loads(data)
+
+    def getKeys(self):
+        byteKeys = self.database.keys()
+        rawKeys = []
+        for key in byteKeys:
+            rawKeys.append(key.decode())
+        return rawKeys
+```
+
+这样就可以完美地实现在 Redis 数据库中进行各种数据类型的存储了。
+
+```python
+>>> r.setData('username', [10,20,90,(30,10,29)])
+>>> r.getData('username')
+[10, 20, 90, (30, 10, 29)]
+```
+
+> 其实如果平时设置 key 时使用字符串，那么 在存入时我们的 key 就不需要用 pickle 库来编码，这样也可以增加效率。不过如果你想要将 key 值设置成更多的变量类型，那么就可以在存储 key 时增加 dumps() 函数
+
+### 结语与其他文档
+
+如此我们就介绍完了 python 与 redis 的连接与使用，相信在看完了篇文章后，你能够更完全地了解 Redis 这一个数据库，并且能够在之后的项目里更好地使用它。
