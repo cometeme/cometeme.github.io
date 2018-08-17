@@ -15,9 +15,9 @@ random 库是 python 自带库中非常常用的一个库，它可以产生许�
 按照其他语言的惯例，在导入 random 库之后，我们首先需要设定一个随机数种子 `seed(num)` 。其中 `num` 就是要设置的种子。为什么要设置随机数种子呢？其实计算机的随机数是一种“**伪随机数**”，它并不能做到真正的随机，而是用一种算法通过随机数种子计算出一个“随机的”序列。所以当随机数种子相同的时候，出现的随机数的序列是一样的。在设定了随机数种子后，我们就可以用 `random()` 函数来输出随机数。下面我们先演示随机数种子相同的情况：
 
 ```python
-  import random
-  random.seed(3)
-  print(random.random())
+import random
+random.seed(3)
+print(random.random())
 ```
 
 运行两次，输出结果是相同的
@@ -29,8 +29,8 @@ random 库是 python 自带库中非常常用的一个库，它可以产生许�
 前面说其他语言使用 `random()` 前要定义随机数种子，但是 python 与其他语言不同。当你省去 `seed()` 中的参数时，它会自动使用系统当前时间作为种子，因为时间基本不会重复，所以就可以保证随机的唯一性（不会像指定种子那样会重复）。 python 中使用 random 库时，还可以不加 `seed()` 这一语句，它也会自动将当前时间设置为随机数种子。所以我们测试下面的代码：
 
 ```python
-  import random
-  print(random.random())
+import random
+print(random.random())
 ```
 
 可以看到，这样的话两次输出就不同了，表面上看起来就具备了随机性。
@@ -46,13 +46,13 @@ random 库是 python 自带库中非常常用的一个库，它可以产生许�
 也许有的人会想到：
 
 ```python
-  int(random.random() * 9) + 1
+int(random.random() * 9) + 1
 ```
 
 如果你想到了上面的代码，恭喜你，基础功不错。不过在 python 中，这就不够“简洁优雅”了。正确的使用方法是
 
 ```python
-  random.randint(1, 9)
+random.randint(1, 9)
 ```
 
 `randint(a, b)` 的作用是产生一个 `[a, b]` 的整数。与这个不同的是， `randrange(m, n[, k = 1])` 这个函数可以产生一个 `[m, n)` 之间以 `k` 为步长的整数，其中参数 `k` 是可以省略的，默认值为1。使用上面几个函数时，要**注意开闭区间**。
@@ -66,9 +66,9 @@ random 库是 python 自带库中非常常用的一个库，它可以产生许�
 比如说你想做一个随机点名的程序，你将所有学生的姓名放在一个列表中。假如 random 库只能实现生成随机数的功能的话，你还必须要将产生的随机数一一分配（比如说分配学号），这样并不直观。这个时候， python 就给我们提供了一个很好的选择 -- `choice(seq)` 。这个函数可以实现从一个列表中随机选择一个内容并返回。例如以下的代码：
 
 ```python
-  import random
-  ls = ['David', 'Mike', 'Jack']
-  print(random.choice(ls))
+import random
+ls = ['David', 'Mike', 'Jack']
+print(random.choice(ls))
 ```
 
 `David`
@@ -76,13 +76,13 @@ random 库是 python 自带库中非常常用的一个库，它可以产生许�
 如果要选出多个元素的话，只需要在 choice 后面加个 s ，`choices(seq[, k = 1])` ，其中seq仍为待输入的序列，在后加 `k = n` 则可以挑选出 `n` 个元素生成一个新的列表。不过这个元素是会重复的。下面就遇到了这个问题：
 
 ```python
-  import random
-  ls = ['David', 'Mike', 'Jack']
-  print(random.choices(ls,k = 2))
+import random
+ls = ['David', 'Mike', 'Jack']
+print(random.choices(ls,k = 2))
 ```
 
 ```python
-  ['Jack', 'Jack']
+['Jack', 'Jack']
 ```
 
 ### 4. shuffle() - 随机打乱一个序列
@@ -92,18 +92,18 @@ random 库是 python 自带库中非常常用的一个库，它可以产生许�
 **错误** 用法：
 
 ```python
-  import random
-  ls = ['David', 'Mike', 'Jack']
-  print(random.shuffle(ls))
+import random
+ls = ['David', 'Mike', 'Jack']
+print(random.shuffle(ls))
 ```
 
 返回值是 `None` ，所以正确用法为
 
 ```python
-  import random
-  ls = ['David', 'Mike', 'Jack']
-  random.shuffle(ls)
-  print(ls)
+import random
+ls = ['David', 'Mike', 'Jack']
+random.shuffle(ls)
+print(ls)
 ```
 
 返回值是 `['Mike', 'Jack', 'David']`

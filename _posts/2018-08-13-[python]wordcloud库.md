@@ -15,7 +15,7 @@ tags: python python库 python第三方库
 不同于其他编程语言， python 安装第三方库的方法特别简单，只需要用 `pip` 指令就可以很轻松地完成了：
 
 ```bash
-  $ pip install wordcloud
+$ pip install wordcloud
 ```
 
 >如果提示权限不足，可以使用管理员或是 `sudo` 指令
@@ -39,19 +39,19 @@ wordcloud 库中有三个常用的函数： `WordCloud()` 、 `generate()` 、 `
 介绍了上面这三个函数之后，我们先用一段代码来演示一下（ in.txt 中的文本可以自己找，但是必须是纯英文的）：
 
 ```python
-  from wordcloud import WordCloud
+from wordcloud import WordCloud
 
-  intxtname = 'in.txt'
-  outpngname = 'wordcloud.png'
+intxtname = 'in.txt'
+outpngname = 'wordcloud.png'
 
-  infile = open(intxtname, 'r', encoding="utf-8")
-  intxt = infile.read()
+infile = open(intxtname, 'r', encoding="utf-8")
+intxt = infile.read()
 
-  wc = WordCloud()
+wc = WordCloud()
 
-  wc.generate(intxt)
-  wc.to_file(outpngname)
-  infile.close()
+wc.generate(intxt)
+wc.to_file(outpngname)
+infile.close()
 ```
 
 运行完成后，可以看到生成了这样一张图片：
@@ -95,7 +95,7 @@ wordcloud 库中有三个常用的函数： `WordCloud()` 、 `generate()` 、 `
 所以，让我们试试将输出的图片改大一些。背景换为白色。
 
 ```python
-  wc = WordCloud(height=600, width=800, background_color='white')
+wc = WordCloud(height=600, width=800, background_color='white')
 ```
 
 我们应该会得到如下的图片：
@@ -113,21 +113,21 @@ wordcloud 库中有三个常用的函数： `WordCloud()` 、 `generate()` 、 `
 让我们看一下下面这样一个代码：
 
 ```python
-  from wordcloud import WordCloud
-  from scipy.misc import imread
-  mask = imread(“WWDC18.png”)
+from wordcloud import WordCloud
+from scipy.misc import imread
+mask = imread(“WWDC18.png”)
 
-  intxtname = 'in.txt'
-  outpngname = 'WWDC18wordcloud.png'
+intxtname = 'in.txt'
+outpngname = 'WWDC18wordcloud.png'
 
-  infile = open(intxtname, 'r', encoding="utf-8")
-  intxt = infile.read()
+infile = open(intxtname, 'r', encoding="utf-8")
+intxt = infile.read()
 
-  wc = WordCloud(height=600, width=800, background_color='white', mask=mask)
+wc = WordCloud(height=600, width=800, background_color='white', mask=mask)
 
-  wc.generate(intxt)
-  wc.to_file(outpngname)
-  infile.close()
+wc.generate(intxt)
+wc.to_file(outpngname)
+infile.close()
 ```
 
 可以看到，我们需要先导入 `imread`，然后用 `imread` 读取一个图片文件。之后我们将读取到的文件设置为 wordcloud 对象的 `mask` 属性。那这样可以实现怎么样的一个效果呢？

@@ -17,16 +17,16 @@ tags: python python库
 下面看一个实例：
 
 ```python
-  import getpass
-  username = input("Username:")
-  password = getpass.getpass()
-  print("Hello:", username, ". Your password is ", password)
+import getpass
+username = input("Username:")
+password = getpass.getpass()
+print("Hello:", username, ". Your password is ", password)
 ```
 
 ```python
-  Username:cometeme
-  Password:
-  Hello: cometeme . Your password is  123123
+Username:cometeme
+Password:
+Hello: cometeme . Your password is123123
 ```
 
 可以看到，在 `Password:` 这一行内，我们输入的所有数据都不会被显示出来。所以说这样特别适合用于输入一些**密码**类的隐私数据。而 `input()` 后输入的数据在输入时是会被**显示**出来的，这样方便用户校对，所以它们各有利弊，也有自己的适用范围。

@@ -21,13 +21,13 @@ CSV 可以较为方便地存储一个一维或者二维的列表。它用**逗�
 CSV 使用起来较为简单，python 中也有[官方的 CSV 库](https://docs.python.org/3/library/csv.html)，我们用代码也可以实现。比如有下面这样一个 CSV 格式的字符串。
 
 ```python
-  '12,24,46'
+'12,24,46'
 ```
 
 在 python 中，我们只需要用到字符串中的 `split` 方法，便可以实现将数据恢复为列表：
 
 ```python
-  ls = '12,24,46'.split(',')
+ls = '12,24,46'.split(',')
 ```
 
 但是要将列表转化为 CSV 格式就稍微复杂些了。我们常用 `‘,’.join(ls)` 这样的方法将列表转化为字符串，但是 `join` 方法只支持所有元素**全部为字符串**的列表，如果列表中有数字等类型就会报错。而且二维列表就需要循环来输出每一行。这个实现方法不难，但是代码有些冗长，所以不贴上来了。如果各位有兴趣可以尝试自己写一写。
@@ -47,29 +47,29 @@ pickle 库只需要用简单的 `dump(obj, file)` 函数就可以实现写入文
 比如说我们下面创建两个实例 `example1.py` 、 `example2.py` 并且尝试在它们之间传输一个列表和一个数据。为了增大难度，我们将列表变为三维，混合了数据类型，并且将其中一部分改为元组。
 
 ```python
-  #example1.py
-  import pickle
-  f = open("abc.pickle", 'wb+')
-  ls = [[(23, 29), (22, 79)], 'hello', '35']
-  num = 3.1415926
-  pickle.dump(ls, f)
-  pickle.dump(num, f)
+#example1.py
+import pickle
+f = open("abc.pickle", 'wb+')
+ls = [[(23, 29), (22, 79)], 'hello', '35']
+num = 3.1415926
+pickle.dump(ls, f)
+pickle.dump(num, f)
 ```
 
 ```python
-  #example2.py
-  import pickle
-  f = open("abc.pickle", 'rb')
-  newls = pickle.load(f)
-  newnum = pickle.load(f)
-  print(newls)
-  print(newnum)
+#example2.py
+import pickle
+f = open("abc.pickle", 'rb')
+newls = pickle.load(f)
+newnum = pickle.load(f)
+print(newls)
+print(newnum)
 ```
 
 我们先运行 `example1.py` ，这个时候便会产生一个叫做 `abc.pickle` 的文件。文件名和后缀怎么取名都可以。我们先尝试用文本编辑器打开这个文件，便会显示以下的内容。
 
 ```python
-  ]q(]q(KKqKKOqeXhelloqX35qe.G@	!MJ.
+]q(]q(KKqKKOqeXhelloqX35qe.G@	!MJ.
 ```
 
 之前说过， pickle 输出的数据是**二进制（流）**的格式，它不能够被直接以文本形式打开。所以在刚刚两个实例中，都要使用 `wb` 、 `rb` 写入、读取文件。
@@ -77,14 +77,14 @@ pickle 库只需要用简单的 `dump(obj, file)` 函数就可以实现写入文
 现在我们打开 `example2.py` 并运行，可以看到控制台成功输出了 `example1.py` 程序中写入的结果，甚至连列表和元组的类型都没有改变：
 
 ```python
-  [[(23, 29), (22, 79)], 'hello', '35']
-  3.1415926
+[[(23, 29), (22, 79)], 'hello', '35']
+3.1415926
 ```
 
 pickle 库的神奇之处在于它可以让你免去文件“I/O”中的转换环节。让你能够更快地完成数据的存储功能。当然， `pickle.load()` 函数的预设是 `ASCII` 编码，所以假如读取后中文出现了乱码（应该会直接报错），这时我们修改 `encoding` 参数就可以了。
 
 ```python
-  pickle.load(f, encoding = 'gb2312')
+pickle.load(f, encoding = 'gb2312')
 ```
 
 ### 4. dumps() 与 loads() - 不一样的功能
