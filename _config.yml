@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: 'cometeme的个人博客'
 description: '分享一些编程的学习笔记'
-keyword: 'cometeme, cometeme的个人博客, python, C++, Arduino, 树莓派, raspberry'
+keyword: 'cometeme, cometeme的个人博客, python, flask, React, Arduino, 树莓派, raspberry'
 url: 'https://cometeme.github.io/' # your host
 
 # if you don't need baseurl, you should leave this value blank.
@@ -19,7 +19,7 @@ footer:
 # Author 配置博主信息
 author: 'cometeme'
 nickname: 'cometeme'
-bio: 'python/react/Arduino/树莓派'
+bio: 'python/React/Arduino/树莓派'
 avatar: '/assets/img/profile.png'
 
 # Search
