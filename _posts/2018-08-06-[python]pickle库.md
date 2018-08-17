@@ -16,7 +16,7 @@ pickle 库的产生是为了解决文件读取中的一大问题：如何方便�
 
 CSV 可以较为方便地存储一个一维或者二维的列表。它用**逗号**分隔不同的数据，用**换行**来表示下一组数据。以下是 [Wiki-CSV](https://en.wikipedia.org/wiki/Comma-separated_values) 上的介绍：
 
->In computing, a comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. A CSV file stores tabular data (numbers and text) in plain text. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. The use of the comma as a field separator is the source of the name for this file format.
+> In computing, a comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. A CSV file stores tabular data (numbers and text) in plain text. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. The use of the comma as a field separator is the source of the name for this file format.
 
 CSV 使用起来较为简单，python 中也有[官方的 CSV 库](https://docs.python.org/3/library/csv.html)，我们用代码也可以实现。比如有下面这样一个 CSV 格式的字符串。
 

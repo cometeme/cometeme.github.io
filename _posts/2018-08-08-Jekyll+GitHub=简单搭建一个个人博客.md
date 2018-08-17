@@ -22,28 +22,28 @@ tags: Jekyll Github Gitee Markdown HTML
 
 不同的模版可能文件的个数不一样，但是一定会有这几个关键文件：
 
-* index.html
-首页的文件
+-   index.html
+    首页的文件
 
-* \_config.yml
-设置你的网站信息
+-   \_config.yml
+    设置你的网站信息
 
-* 404.html
-自定义404界面（这个一般都会有，如果没有的话就会使用最“原始”的404页面）
+-   404.html
+    自定义404界面（这个一般都会有，如果没有的话就会使用最“原始”的404页面）
 
-* README.md
-（很重要！）作者一般会在这个文件中介绍如何配置模版。如果没有这个文件，请重新打开你下载的模版的介绍页面，下方应该会有提示。
+-   README.md
+    （很重要！）作者一般会在这个文件中介绍如何配置模版。如果没有这个文件，请重新打开你下载的模版的介绍页面，下方应该会有提示。
 
 同时，文件目录下应该也会有这些文件夹：
 
-* \_post
-存放你的文章
+-   \_post
+    存放你的文章
 
-* \_layouts
-网页模版文件
+-   \_layouts
+    网页模版文件
 
-* \_includes
-导航栏，页脚等组件模版
+-   \_includes
+    导航栏，页脚等组件模版
 
 ### 3.修改信息
 
@@ -59,17 +59,17 @@ tags: Jekyll Github Gitee Markdown HTML
 
 网址：
 
-* [GitHub](https://github.com)
+-   [GitHub](https://github.com)
 
-* [Gitee](https://gitee.com)
+-   [Gitee](https://gitee.com)
 
 ### 5.创建个人站点的仓库
 
 现在我们可以创建一个仓库（ Repository ）。不过 Pages 分为**项目 Pages** 和**个人 Pages** 。其中**个人 Pages** 可以通过特殊的域名访问。（比如本站是 `https://cometeme.github.io` ）要创建个人 Pages ，仓库的名称必须要符合一定的规则。 GitHub 与 Gitee 两者的名称规则不同。
 
-* GitHub：仓库名称要求为 `username.github.io`
+-   GitHub：仓库名称要求为 `username.github.io`
 
-* Gitee：仓库名称要求为 `username`
+-   Gitee：仓库名称要求为 `username`
 
 > 如果想要之后直接将 GitHub 上面的项目克隆至 Gitee ，可以先安装上面的规则创建一个空的项目，具体如何克隆我会在之后发布新的文章介绍。
 
@@ -79,17 +79,17 @@ tags: Jekyll Github Gitee Markdown HTML
 
 ### 6.开启 Pages 服务
 
-* GitHub
+-   GitHub
 
 选中菜单的 `Settings` 选单。
 
 ![settings menu](../../../assets/screenshot/Jekyll-4.png)
 
-找到下方的 `GitHub Pages` 选项。（本图中已经开启，如果没有开启只需要点击相应的按钮开启即可）其中上方提示 "Your site is published at https://cometeme.github.io/" 说明已经部署完成了。这个时候你点击那个链接就可以看到自己的网页。（ GitHub 的页面更新速度较慢，有些时候做一定的更改要过段时间刷新才生效）
+找到下方的 `GitHub Pages` 选项。（本图中已经开启，如果没有开启只需要点击相应的按钮开启即可）其中上方提示 "Your site is published at <https://cometeme.github.io/>" 说明已经部署完成了。这个时候你点击那个链接就可以看到自己的网页。（ GitHub 的页面更新速度较慢，有些时候做一定的更改要过段时间刷新才生效）
 
 ![GitHub Pages settings](../../../assets/screenshot/Jekyll-5.png)
 
-* Gitee
+-   Gitee
 
 选择菜单中的 `服务` 。
 
@@ -133,13 +133,13 @@ tags: Jekyll Github Gitee Markdown HTML JavaScript
 
 不同的模版参数的格式都不同，不过以我的为例，其中这些参数有以下作用：
 
-* layout：选定一个模版文件，一般不需要改
-* title：文章的标题名
-* subtitle：文章的小标题
-* date：文章的时间
-* catagories：文章的分类，不同分类可用空格风格
-* cover：文章的封面图片位置
-* tags：文章的标签。类似于catagories，可以分的更细一些
+-   layout：选定一个模版文件，一般不需要改
+-   title：文章的标题名
+-   subtitle：文章的小标题
+-   date：文章的时间
+-   catagories：文章的分类，不同分类可用空格风格
+-   cover：文章的封面图片位置
+-   tags：文章的标签。类似于catagories，可以分的更细一些
 
 经过上面的介绍后，我们了解 YAML 的作用。在学习了 YAML 之后，我们就能开始创建文章了！
 
@@ -149,26 +149,26 @@ tags: Jekyll Github Gitee Markdown HTML JavaScript
 
 创建完一个新的文章之后，我们用文本编辑器打开它，并将其他文章的 YAML 头复制进来，并进行一定的修改。在头文件的下方，我们就可以用 Markdown 写我们的文章了。为什么要推荐使用 Markdown 呢？
 
-* Markdown 的**优点**：
+-   Markdown 的**优点**：
 
-    * 可以用简单的语法来实现创建标题，进行加粗等操作。
+    -   可以用简单的语法来实现创建标题，进行加粗等操作。
 
-    * 对可以很方便地显示代码、代码块。
+    -   对可以很方便地显示代码、代码块。
 
-    * 不需要学习 html 的语法，可以专注于写作本身。
+    -   不需要学习 html 的语法，可以专注于写作本身。
 
-* Markdown 的**缺点**：
+-   Markdown 的**缺点**：
 
-    * 需要用专门的软件来显示。不同的软件显示效果会不同。
+    -   需要用专门的软件来显示。不同的软件显示效果会不同。
 
-    * 排版不直观，如果两个自然段之间只有一个换行，它就会连在一起。
+    -   排版不直观，如果两个自然段之间只有一个换行，它就会连在一起。
 
-    * 指令有些多，需要记。
+    -   指令有些多，需要记。
 
 虽然 Markdown 的缺点也有些多，但是它的确能够让你专注于写作。不过在写作之前，你需要先：
 
-* 准备一个 Markdown 编辑器，可以实时显示 Markdown 的效果。( GitHub 在编辑 Markdown 文件时也可以切换显示，但是在 GitHub 的书写有些不顺畅)
+-   准备一个 Markdown 编辑器，可以实时显示 Markdown 的效果。( GitHub 在编辑 Markdown 文件时也可以切换显示，但是在 GitHub 的书写有些不顺畅)
 
-* 学习一些简单的 [Markdown 语法](http://xianbai.me/learn-md/index.html) 。
+-   学习一些简单的 [Markdown 语法](http://xianbai.me/learn-md/index.html) 。
 
 学习了一部分 Markdown 语法后，你就可以完成第一篇文章并发布它。当你把它上传到 GitHub 上的 `_post` 文件夹之后，你就可以在你的博客中看到它。不过记得将它引用的照片传到**相应的目录**，不然的话它可是不会显示的哦。

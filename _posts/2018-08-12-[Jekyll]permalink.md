@@ -20,26 +20,26 @@ tags: Jekyll Markdown HTML
 
 permalink 使用 `:` 来标记关键词。其中有以下这一些关键词：
 
-* year
-年份
+-   year
+    年份
 
-* month
-月份
+-   month
+    月份
 
-* i_month
-短月份(不带开头的0)
+-   i_month
+    短月份(不带开头的0)
 
-* day
-日期
+-   day
+    日期
 
-* i_day
-短日期(不带开头的0)
+-   i_day
+    短日期(不带开头的0)
 
-* title
-文章标题
+-   title
+    文章标题
 
-* categories
-文章目录，如果没有目录，会自动忽略
+-   categories
+    文章目录，如果没有目录，会自动忽略
 
 所以要实现 `/jekyll/2018/08/Jekyll-为文章设置永久链接.html` 这样的效果，我们只需要配制成
 
@@ -55,14 +55,14 @@ permalink: /:categories/:year/:month/:title.html
 
 其实， permalink 还带有三个预置好的参数。其中默认的参数就是 date 。它的三个参数如下：
 
-* date
-`/:categories/:year/:month/:day/:title.html`
+-   date
+    `/:categories/:year/:month/:day/:title.html`
 
-* pretty
-`/:categories/:year/:month/:day/:title/`
+-   pretty
+    `/:categories/:year/:month/:day/:title/`
 
-* none
-`/:categories/:title.html`
+-   none
+    `/:categories/:title.html`
 
 date 和 none 的参数都很好理解，但是 pretty 这个参数结尾的形式就很好玩了。它提醒我们的是：如果最后为 `/:title/` 而非 `/:title.html` 的话，显示出来的网页地址就不会带 `.html` 这个后缀，这样更美观了。所以当你在创建时，也可以通过这样的设置来实现不带后缀的链接地址。
 
