@@ -29,13 +29,13 @@ tags: python python库
 python 自带了一个非常简便的虚拟化库 - venv 。在 python 3.5 及之前的版本，创建一个虚拟化项目的指令为：
 
 ```bash
-  $ python -m venv <directory>
+$ python -m venv <directory>
 ```
 
 而在 3.6 之后的版本中，指令变成了
 
 ```bash
-  $ python3 -m venv <directory>
+$ python3 -m venv <directory>
 ```
 
 其中在 3.4 及之前的版本中，初始化一个环境是**不会自带 pip** 的。而在 3.4 之后，可以添加 `--without-pip` 这个参数来去掉 pip 包。
@@ -49,21 +49,21 @@ python 自带了一个非常简便的虚拟化库 - venv 。在 python 3.5 及�
 
 - MacOS 或 Linux
 
-  - bash/zsh	`$ source <venv>/bin/activate`
+    - bash/zsh	`$ source <venv>/bin/activate`
 
-  - fish	`$ . <venv>/bin/activate.fish`
+    - fish	`$ . <venv>/bin/activate.fish`
 
-  - csh/tcsh	`$ source <venv>/bin/activate.csh`
+    - csh/tcsh	`$ source <venv>/bin/activate.csh`
 
 - Windows
 
-  - cmd.exe	`C:\> <venv>\Scripts\activate.bat`
+    - cmd.exe	`C:\> <venv>\Scripts\activate.bat`
 
-  - PowerShell	`PS C:\> <venv>\Scripts\Activate.ps1`
+    - PowerShell	`PS C:\> <venv>\Scripts\Activate.ps1`
 
 ```python
-  cometeme$ source /Users/cometeme/Documents/example/bin/activate
-  (example)cometeme$
+cometeme$ source /Users/cometeme/Documents/example/bin/activate
+(example)cometeme$
 ```
 
 可以看到前面多了一个(example)的提示，说明我们已经进入到虚拟环境中了。在虚拟环境里，我们可以像正常一样操作里面的文件，或是安装第三方库，只不过这一些都只会影响到本地的内容了。
@@ -75,9 +75,9 @@ python 自带了一个非常简便的虚拟化库 - venv 。在 python 3.5 及�
 在虚拟环境的根目录下，我们可以看到一个叫 `pyvenv.cfg` 的文件。用记事本打开后可以看到这几行内容：
 
 ```python
-  home = /Library/Frameworks/Python.framework/Versions/3.7/bin
-  include-system-site-packages = false
-  version = 3.7.0
+home = /Library/Frameworks/Python.framework/Versions/3.7/bin
+include-system-site-packages = false
+version = 3.7.0
 ```
 
 其中， `home` 指的是系统中 python 库的安装位置。除非你自定义过了，不然这个默认值就是对的。

@@ -44,7 +44,7 @@ permalink 使用 `:` 来标记关键词。其中有以下这一些关键词：
 所以要实现 `/jekyll/2018/08/Jekyll-为文章设置永久链接.html` 这样的效果，我们只需要配制成
 
 ```html
-  permalink: /:categories/:year/:month/:title.html
+permalink: /:categories/:year/:month/:title.html
 ```
 
 这样的格式就可以了。

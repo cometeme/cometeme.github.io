@@ -17,32 +17,32 @@ tags: python python库
 `time()` 是一个最基础的函数。它返回一个以秒为单位的时间。先放一个实例测试一下。
 
 ```python
-  >>> import time
-  >>> time.time()
-  1533368014.331627
+>>> import time
+>>> time.time()
+1533368014.331627
 ```
 
 可以看到它返回的值比较大。其实 `time()` 函数返回的是自**1970年1月1日**以来所经历的**秒**数，因为可读性比较差，所以我们一般不会去使用它。当然， `time()` 函数有一个比较常见的运用，就是程序计时。比如说，你要测量一个循环所消耗的时间，就可以这么写：
 
 ```python
-  from time import *
-  ls = [1, 2, 3, 4, 5]
-  start = time()
-  for item in ls:
+from time import *
+ls = [1, 2, 3, 4, 5]
+start = time()
+for item in ls:
     print(item)
-  end = time()
-  print(end - start)
+end = time()
+print(end - start)
 ```
 
 运行结果：
 
 ```python
-  1
-  2
-  3
-  4
-  5
-  0.0019230842590332031
+1
+2
+3
+4
+5
+0.0019230842590332031
 ```
 
 可见，循环打印了五次的耗时大概是 0.002 秒。许多的算法有着大量的循环，一般循环耗时会很大，而如果需要检测一个算法的优化程度，测量运行时长是一个非常有效的标准。
@@ -58,16 +58,16 @@ tags: python python库
 time库中有一个比较常用的函数 `sleep(s)` ，它可以让程序暂停 `s` 秒。这个功能在进行无限循环时可以控制循环频率（比如说爬虫）。不过， `sleep(1)` 并不代表这个程序正好暂停了1s，我们可以用上面介绍的计时程序来测试一下。
 
 ```python
-  from time import *
-  ls = [1, 2, 3, 4, 5]
-  start = perf_counter()
-  sleep(1)
-  end = perf_counter()
-  print(end - start)
+from time import *
+ls = [1, 2, 3, 4, 5]
+start = perf_counter()
+sleep(1)
+end = perf_counter()
+print(end - start)
 ```
 
 ```python
-  1.0043321669945726
+1.0043321669945726
 ```
 
 当然误差并不算太大，但是当 `sleep()` 的时间特别短的时候，就**不能**很准确地暂停。
@@ -79,8 +79,8 @@ time库中有一个比较常用的函数 `sleep(s)` ，它可以让程序暂停 
 哈哈， python 这么万能，这当然已经被考虑进去了。 `ctime()` 这个函数就可以将当前时间按照字符串格式输出。
 
 ```python
-  >>> time.ctime()
-  'Sat Aug  4 15:58:56 2018'
+>>> time.ctime()
+'Sat Aug4 15:58:56 2018'
 ```
 
 嗯，这样看起来是不是好多了。但是假如你不习惯年份在后的形式，也不想输出星期几，而是想要输出 `2018 08 04 16:00` 这样的格式， `ctime()` 便不能满足我们对于时间格式化的要求了。所以我们需要学习“**格式化输出**”时间。
@@ -130,8 +130,8 @@ AM/PM
 所以比如说我们要输出类似于 `2018 08 04 16:00` 这样的时间格式，我们只需要用以下的代码：
 
 ```python
-  >>> time.strftime("%Y %m %d %H:%M", time.localtime())
-  '2018 08 04 16:24'
+>>> time.strftime("%Y %m %d %H:%M", time.localtime())
+'2018 08 04 16:24'
 ```
 
 这样就实现了自定义时间文本输出的功能了。

@@ -25,7 +25,7 @@ tags: python pip
 接下来我们试一试切换源，下载一个 tensorflow 库
 
 ```bash
-  $ sudo -H pip install tensorflow -i https://mirrors.aliyun.com/pypi/simple/
+$ sudo -H pip install tensorflow -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
 >如果你使用的源为 http ，那么会提示源不被信任。你只需要按照提示，在后面加上 --trusted-host <host> 就可以了
@@ -47,8 +47,8 @@ Linux `/.config/pip/pip.conf`
 在新建的配置文件中写入以下内容：
 
 ```python
-  [global]
-  index-url = https://mirrors.aliyun.com/pypi/simple/
+[global]
+index-url = https://mirrors.aliyun.com/pypi/simple/
 ```
 
 这样就可以在之后默认使用设定的源了。
