@@ -28,14 +28,14 @@ tags: python python库
 
 python 自带了一个非常简便的虚拟化库 - venv 。在 python 3.5 及之前的版本，创建一个虚拟化项目的指令为：
 
-```python
-  python -m venv <directory>
+```bash
+  $ python -m venv <directory>
 ```
 
 而在 3.6 之后的版本中，指令变成了
 
-```python
-  python3 -m venv <directory>
+```bash
+  $ python3 -m venv <directory>
 ```
 
 其中在 3.4 及之前的版本中，初始化一个环境是**不会自带 pip** 的。而在 3.4 之后，可以添加 `--without-pip` 这个参数来去掉 pip 包。

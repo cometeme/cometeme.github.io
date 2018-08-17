@@ -16,17 +16,23 @@ python 编写的程序，除了运行速度的短板之外，还有一个问题�
 
 因为是一个第三方库，所以第一次使用时，需要先安装。（如果提示权限不够，可能要用管理员或前面加 `sudo` ）
 
-`pip install PyInstaller`
+```bash
+  $ pip install PyInstaller
+```
 
 ### 2. 生成可执行程序
 
 安装成功后，将控制台切换到在你要编译的 python 程序的根目录下。例如
 
-`cd /Users/cometeme/Documents/PythonCode`
+```bash
+  $ cd /Users/cometeme/Documents/PythonCode
+```
 
 接下来就可以使用 `pyinstaller -F example.py` 指令，将 `example.py` 打包成单个可执行文件了。输出了以下信息（限于篇幅，只贴出了最后一行  ）：
 
-`INFO: Building EXE from out00-EXE.toc completed successfully.`
+```bash
+  INFO: Building EXE from out00-EXE.toc completed successfully.
+```
 
 打开文件夹，就可以找到编译完成的程序了。
 

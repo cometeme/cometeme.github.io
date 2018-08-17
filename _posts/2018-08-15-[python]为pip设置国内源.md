@@ -12,7 +12,7 @@ tags: python pip
 
 其实之前在使用 Debian 的 `apt-get` 指令时，也常常出现类似的情况。不过 `apt-get` 可以通过更换镜像源来加速。抱着一试的态度，我发现 pip 果然也有国内镜像源。在 pip 时，只需要在后面加上 `-i <source>` 指令就可以实现。
 
-### 1.常用的源
+### 1. 常用的源
 
 因为之前更换 `apt-get` 的源时用的就是清华源和阿里云的源，所以我优先寻找到了这两个。
 
@@ -20,12 +20,12 @@ tags: python pip
 
 清华 https://pypi.tuna.tsinghua.edu.cn/simple
 
-### 2.在使用 pip 指令时切换源
+### 2. 在使用 pip 指令时切换源
 
 接下来我们试一试切换源，下载一个 tensorflow 库
 
 ```bash
-  sudo -H pip install tensorflow -i https://mirrors.aliyun.com/pypi/simple/
+  $ sudo -H pip install tensorflow -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
 >如果你使用的源为 http ，那么会提示源不被信任。你只需要按照提示，在后面加上 --trusted-host <host> 就可以了
@@ -34,7 +34,7 @@ tags: python pip
 
 不过如果每次使用 pip 都需要输入一次，也有些繁琐。
 
-### 3.在文件中配置默认源
+### 3. 在文件中配置默认源
 
 不同的系统平台的配置方法不同，第一次设置时需要新建目录和文件。
 
