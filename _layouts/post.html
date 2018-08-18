@@ -121,6 +121,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
   {% if site.comments.gitalk %}
+  <script>
   var gitalk = new Gitalk({
         clientID: '{{ site.comments.gitalk_clientID }}',
         clientSecret: '{{ site.comments.gitalk_Secret }}',
@@ -131,6 +132,7 @@
         distractionFreeMode: '{{ site.comments.distractionFreeMode }}'  // Facebook-like distraction free mode
       })
       gitalk.render('gitalk_container')
+  </script>
   {% endif %}
 
   <script src="/assets/js/prism.js"></script>
