@@ -66,8 +66,8 @@ a {
   .g-header .g-logo {
     float: left;
     margin-left: 2%;
-    width: 38px;
-    height: 30px;
+    width: 30px;
+    height: 25px;
     background: url("../icons/logo.svg") no-repeat center;
     background-size: 100% 100%;
     opacity: .8;
