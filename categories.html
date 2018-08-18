@@ -6,20 +6,12 @@ layout: default
 {% include header.html %}
 
 <div class="g-banner categories-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
-    <h2>categories</h2>
+    <h2>CATEGORIES</h2>
 </div>
 
 <main class="categories-content">
 
     <ul class="categories-list">
-        <li>
-        {% if site.recommend-categories and site.categories.size>0 %}
-            {% for category in site.categories %}
-            <a href="#{{ category[0] }}" class="category">{{ category[0]}}</a>
-            {% endfor %}
-        {% endif %}
-        </li>
-
         {% for category in site.categories %}
         <li>
             <span class="category-name" id="{{ category[0] }}">「{{ category[0] }}」</span>
