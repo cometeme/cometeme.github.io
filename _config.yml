@@ -11,6 +11,7 @@ baseurl: ''
 nav:
   home: '/'
   tags: '/tags.html'
+  categories: '/categories.html'
 
 # Footer
 footer:
