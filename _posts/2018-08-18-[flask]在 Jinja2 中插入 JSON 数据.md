@@ -11,7 +11,7 @@ tags: python flask Jinja2
 之前在用 flask 搭建一个网页时，我想要在模版中传入一个 JSON 的字符串，结果发现通过 Jinja2 传入的 JSON 数据变成了了乱码。其中的引号和空格都变为了 `&#xx;` 的形式：
 
 ```javascript
-var humidityJSON = {{ humidityJSON }};
+var humidityJSON = \{{ humidityJSON }\};
 ```
 
 传入之后：
@@ -26,14 +26,14 @@ var humidityJSON = [{&#39;Time&#39;: &#39;08/18/2018 09:25:45&#39;, &#39;Humidit
 
 尝试了半个上午无解之后，我去 Stack Overflow 上面搜索了这样一个问题，终于找到了解决方法：
 
-[stack overflow sending data as JSON object from Python to Javascript with Jinja](https://stackoverflow.com/questions/24719592/sending-data-as-json-object-from-python-to-javascript-with-jinja)
+[Stack Overflow - sending data as JSON object from Python to Javascript with Jinja](https://stackoverflow.com/questions/24719592/sending-data-as-json-object-from-python-to-javascript-with-jinja)
 
 ### 使用 tojson 设置
 
 其实只需要在传入的数据后加上 tojson 的设置就能够完成传递 JSON 数据了。
 
 ```javascript
-var humidityJSON = {{ humidityJSON|tojson }};
+var humidityJSON = \{{ humidityJSON|tojson }\};
 ```
 
 > Stack Overflow 网站上使用的方法是 {{ data|tojson|safe }} 但是其实在新版本的 Jinja2 之后就不需要 safe 选项了
