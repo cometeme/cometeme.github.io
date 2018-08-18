@@ -158,10 +158,10 @@ a {
     z-index: 0; }
 
 .banner-theme-default {
-  background: -webkit-linear-gradient(0deg, #0F0F0F, #0F0F0F);
-  background: -o-linear-gradient(0deg, #0F0F0F, #0F0F0F);
-  background: -moz-linear-gradient(0deg, #0F0F0F, #0F0F0F);
-  background: linear-gradient(100deg, #0F0F0F, #0F0F0F); }
+  background: -webkit-linear-gradient(0deg, #2F3138, #2F3138);
+  background: -o-linear-gradient(0deg, #2F3138, #2F3138);
+  background: -moz-linear-gradient(0deg, #2F3138, #2F3138);
+  background: linear-gradient(100deg, #2F3138, #2F3138); }
 
 .banner-theme-pink {
   background: -webkit-linear-gradient(0deg, #FFCE69, #FA709A);
@@ -561,7 +561,7 @@ a {
     z-index: -2; }
 
 .bgcolor-default {
-  background-color: #0F0F0F; }
+  background-color: #2F3138; }
 
 .bgcolor-pink {
   background-color: #FC6794; }
