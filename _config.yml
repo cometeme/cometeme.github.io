@@ -40,7 +40,7 @@ comments:
   distractionFreeMode: false
 
 # MathJax 公式支持 by Ray-Eldath
-mathjax: true
+mathjax: false
 
 # Share
 social-share: true
