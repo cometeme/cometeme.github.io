@@ -4,7 +4,7 @@ title: '[flask] 在 Jinja2 中插入 JSON 数据'
 subtitle: '解决传入 JSON 数据时出现的乱码'
 date: 2018-08-18
 categories: flask
-cover:
+cover: '../../../assets/img/jinja2-json-header.jpg'
 tags: python flask Jinja2
 ---
 
