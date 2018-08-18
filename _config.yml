@@ -32,8 +32,8 @@ nightMode: false
 # Comments 评论功能
 comments:
   gitalk: true
-  gitalk_clientID: '057c437649d2166c1c31'
-  gitalk_Secret: '1e05b1d0eb9c20b90bdc2afc3bf3e1d9b9de7d24'
+  gitalk_clientID: '82e055b11a42812ca8e1'
+  gitalk_Secret: 'ac4cd35355e23b84fb16900f1be81768ef44a73e'
   gitalk_repo: 'cometeme.github.io'
   gitalk_owner: 'cometeme'
   gitalk_admin: 'cometeme'
