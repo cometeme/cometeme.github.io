@@ -61,7 +61,6 @@ sns:
   twitter: 'https://twitter.com/cometeme'
   zhihu: 'https://www.zhihu.com/people/cometeme/activities'
   github: 'https://github.com/cometeme'
-  dribbble: 'https://dribbble.com/cometeme'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar

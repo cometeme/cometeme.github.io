@@ -66,8 +66,8 @@ a {
   .g-header .g-logo {
     float: left;
     margin-left: 2%;
-    width: 30px;
-    height: 25px;
+    width: 60px;
+    height: 26px;
     background: url("../icons/logo.svg") no-repeat center;
     background-size: 100% 100%;
     opacity: .8;
@@ -158,10 +158,10 @@ a {
     z-index: 0; }
 
 .banner-theme-default {
-  background: -webkit-linear-gradient(0deg, #0F0F0F, #0F0F0F);
-  background: -o-linear-gradient(0deg, #0F0F0F, #0F0F0F);
-  background: -moz-linear-gradient(0deg, #0F0F0F, #0F0F0F);
-  background: linear-gradient(100deg, #0F0F0F, #0F0F0F); }
+  background: -webkit-linear-gradient(0deg, #3CD5FF, #007AFF);
+  background: -o-linear-gradient(0deg, #3CD5FF, #007AFF);
+  background: -moz-linear-gradient(0deg, #3CD5FF, #007AFF);
+  background: linear-gradient(100deg, #3CD5FF, #007AFF); }
 
 .banner-theme-pink {
   background: -webkit-linear-gradient(0deg, #FFCE69, #FA709A);
@@ -170,7 +170,7 @@ a {
   background: linear-gradient(100deg, #FFCE69, #FA709A); }
 
 .themeColor-default {
-  background-color: #0F0F0F; }
+  background-color: #1494FB; }
 
 .themeColor-pink {
   background-color: #FC6794; }
@@ -310,7 +310,7 @@ a {
         color: #575757; }
       .author-card .sns-links li .icon-facebook:hover {
         color: #3D5A9A; }
-      .author-card .sns-links li .icon-dribbble:hover {
+      .author-card .sns-links li .icon-dribble:hover {
         color: #F26798; }
       .author-card .sns-links li .icon-jianshu:hover {
         color: #EA6F5A; }
@@ -561,7 +561,7 @@ a {
     z-index: -2; }
 
 .bgcolor-default {
-  background-color: #0f0f00f; }
+  background-color: #1494FB; }
 
 .bgcolor-pink {
   background-color: #FC6794; }
