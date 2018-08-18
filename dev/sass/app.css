@@ -158,10 +158,10 @@ a {
     z-index: 0; }
 
 .banner-theme-default {
-  background: -webkit-linear-gradient(0deg, #3CD5FF, #007AFF);
-  background: -o-linear-gradient(0deg, #3CD5FF, #007AFF);
-  background: -moz-linear-gradient(0deg, #3CD5FF, #007AFF);
-  background: linear-gradient(100deg, #3CD5FF, #007AFF); }
+  background: -webkit-linear-gradient(0deg, #0F0F0F, #0F0F0F);
+  background: -o-linear-gradient(0deg, #0F0F0F, #0F0F0F);
+  background: -moz-linear-gradient(0deg, #0F0F0F, #0F0F0F);
+  background: linear-gradient(100deg, #0F0F0F, #0F0F0F); }
 
 .banner-theme-pink {
   background: -webkit-linear-gradient(0deg, #FFCE69, #FA709A);
