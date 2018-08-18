@@ -5,18 +5,18 @@ layout: default
 
 {% include header.html %}
 
-<div class="g-banner categories-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
+<div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
     <h2>CATEGORIES</h2>
 </div>
 
-<main class="categories-content">
+<main class="tags-content">
 
-    <ul class="categories-list">
+    <ul class="tags-list">
         {% for category in site.categories %}
         <li>
-            <span class="category-name" id="{{ category[0] }}">「{{ category[0] }}」</span>
+            <span class="tag-name" id="{{ category[0] }}">「{{ category[0] }}」</span>
             {% for post in category[1] %}
-            <a class="category-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            <a class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         </li>
         {% endfor%}
