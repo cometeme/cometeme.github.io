@@ -117,26 +117,20 @@
     });
   </script>
 
-  {% if site.comments.disqus %}
-  <script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document,
-        s = d.createElement('script');
-      s.src = '{{ site.comments.disqus_url }}';
-      s.setAttribute('data-timestamp', +new Date());
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
+  {% if site.comments.gitalk %}
+  var gitalk = new Gitalk({
+        clientID: '{{ site.comments.gitalk_clientID }}',
+        clientSecret: '{{ site.comments.gitalk_Secret }}',
+        repo: '{{ site.comments.gitalk_repo }}',
+        owner: '{{ site.comments.gitalk_owner }}',
+        admin: '{{ site.comments.gitalk_admin }}',
+        id: location.pathname,      // Ensure uniqueness and length less than 50{{ page.title }}
+        distractionFreeMode: '{{ site.comments.distractionFreeMode }}'  // Facebook-like distraction free mode
+      })
+      gitalk.render('gitalk_container')
   {% endif %}
 
   <script src="/assets/js/prism.js"></script>
