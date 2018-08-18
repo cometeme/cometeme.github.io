@@ -45,8 +45,6 @@
     {% endif %}
   </div>
 
-  <div id="gitalk_container"><div>
-
   <section class="author-detail">
     <section class="post-footer-item author-card">
       <div class="avatar">
@@ -98,7 +96,7 @@
       {% endif %}
     </section>
     <section class="post-footer-item comment">
-      <div id="disqus_thread"></div>
+      <div id="comment_container"></div>
     </section>
   </section>
 
@@ -160,7 +158,7 @@
       title: '{{ page.title }}',
       createIssueManually: true
     })
-    gitalk.render('gitalk_container')
+    gitalk.render('comment_container')
 
     </script>
     {% endif %}
