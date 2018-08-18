@@ -1,12 +1,16 @@
 ---
 title: Categories
 layout: default
+header-img: /assets/img/page-header.jpg
 ---
 
 {% include header.html %}
 
 <div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
     <h2>CATEGORIES</h2>
+    {% if page.header-img %}
+    <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
+    {% endif %}
 </div>
 
 <main class="tags-content">
