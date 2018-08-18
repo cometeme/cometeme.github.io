@@ -31,6 +31,9 @@ nightMode: false
 
 # Comments 评论功能
 comments:
+  disqus: false
+
+  
   gitalk: true
   gitalk_clientID: '82e055b11a42812ca8e1'
   gitalk_Secret: 'ac4cd35355e23b84fb16900f1be81768ef44a73e'
