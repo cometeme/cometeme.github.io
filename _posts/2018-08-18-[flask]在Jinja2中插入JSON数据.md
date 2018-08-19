@@ -36,7 +36,7 @@ var humidityJSON = [{&#39;Time&#39;: &#39;08/18/2018 09:25:45&#39;, &#39;Humidit
 var humidityJSON = {/{ humidityJSON|tojson }/};
 ```
 
-> Stack Overflow 网站上使用的方法是 {{ data|tojson|safe }} 但是其实在新版本的 Jinja2 之后就不需要 safe 选项了
+> Stack Overflow 网站上使用的方法是 `data|tojson|safe` 但是其实在新版本的 Jinja2 之后就不需要 safe 选项了
 
 ```javascript
 var humidityJSON = [{"Humidity": 25, "Time": "08/18/2018 09:25:45"}...
