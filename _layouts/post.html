@@ -66,6 +66,11 @@
       </ul>
       {% endif %}
     </section>
+
+    <section class="post-footer-item comment">
+      <div id="comment_container"></div>
+    </section>
+
     <section class="post-footer-item read-next">
       {% if page.next.url %}
       <div class="read-next-item">
@@ -95,9 +100,7 @@
       </div>
       {% endif %}
     </section>
-    <section class="post-footer-item comment">
-      <div id="comment_container"></div>
-    </section>
+
   </section>
 
   {% include footer.html %}
