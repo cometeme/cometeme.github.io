@@ -83,7 +83,7 @@ Gitalk 对象还有许多参数，其中较为常用的还有以下两个：
 
 首先我们需要注册一个GitHub Application：
 
-[Register a new OAuth application]Register a new OAuth application](<https://github.com/settings/applications/new>)
+[Register a new OAuth application]Register a new OAuth application](https://github.com/settings/applications/new)
 
 其中的 `Application name` 可以随便填， `Homepage URL` 和 `Authorization callback URL` 需要填写你**博客网页**的网址。
 
