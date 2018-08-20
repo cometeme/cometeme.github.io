@@ -137,7 +137,7 @@ tags: Jekyll Github Gitee Markdown HTML JavaScript
 -   title：文章的标题名
 -   subtitle：文章的小标题
 -   date：文章的时间
--   catagories：文章的分类，不同分类可用空格风格
+-   catagories：文章的分类，不同分类可用空格分割
 -   cover：文章的封面图片位置
 -   tags：文章的标签。类似于catagories，可以分的更细一些
 
@@ -172,3 +172,7 @@ tags: Jekyll Github Gitee Markdown HTML JavaScript
 -   学习一些简单的 [Markdown 语法](http://xianbai.me/learn-md/index.html) 。
 
 学习了一部分 Markdown 语法后，你就可以完成第一篇文章并发布它。当你把它上传到 GitHub 上的 `_post` 文件夹之后，你就可以在你的博客中看到它。不过记得将它引用的照片传到**相应的目录**，不然的话它可是不会显示的哦。
+
+### 结语与其他文档
+
+这样就完成了搭建 Github Pages 个人博客的操作了。接下来，你就可以对它进行更多地自定义操作，并且添加更多的内容。希望大家能够在写个人博客的过程中提升自己的技术水平，并将自己的学习经验分享给更多人。
