@@ -34,7 +34,7 @@ $ redis-server
 
 ![Redis_bash](../../../assets/screenshot/redis-1.png)
 
-> 在调试完成后，我们应该使用conf配置文件打开 Redis 服务器，不然会有安全性隐患。
+> 在调试完成后，我们应该使用 conf 配置文件打开 Redis 服务器，不然会有安全性隐患。
 
 在 python 中，我们可以通过定义一个 Redis 对象来实现对 Redis 数据库的连接。这里我们先使用 IDLE 的交互式编程模式来完成。
 
