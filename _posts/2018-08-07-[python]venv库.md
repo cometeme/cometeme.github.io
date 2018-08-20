@@ -44,7 +44,7 @@ $ python3 -m venv <directory>
 
 ### 3.进入/退出虚拟化环境
 
-成功创建了虚拟化的环境之后，我们需要先**进入**这个环境（不然 pip 还是会装在项目外面）。我们可以使用以下指令来进入环境。其中 `<venv>` 是你项目文件夹的路径。
+成功创建了虚拟化的环境之后，我们需要先**进入**这个环境（不然 pip 还是会装在系统中）。我们可以使用以下指令来进入环境。其中 `<venv>` 是你项目文件夹的路径。
 
 -   MacOS 或 Linux
 
@@ -71,7 +71,7 @@ cometeme$ source /Users/cometeme/Documents/example/bin/activate
 
 ### 4.设置虚拟环境
 
-在虚拟环境的根目录下，我们可以看到一个叫 `pyvenv.cfg` 的文件。用记事本打开后可以看到这几行内容：
+在虚拟环境的根目录下，我们可以看到一个叫 `pyvenv.cfg` 的文件。用文本编辑器打开后可以看到这几行内容：
 
 ```python
 home = /Library/Frameworks/Python.framework/Versions/3.7/bin
@@ -87,4 +87,4 @@ version = 3.7.0
 
 ### 结语与其他文档
 
-短短的几十行， venv 的这个库的一些简单使用方法就已经介绍完了，简洁却又方便，这一直是 python 的特性。其实除了可以在控制台中使用外，它还可以作为一个模块在程序中使用。不过一般情况下我们只需要用控制台就可以了。如果大家还想深入研究，可以查看 [29.3. venv — Creation of virtual environments](https://docs.python.org/3/library/venv.html) 。
+大约一千多字， venv 的这个库的一些简单使用方法就已经介绍完了，简洁却又方便，这一直是 python 的特性。其实除了可以在控制台中使用外，它还可以作为一个模块在程序中使用。不过一般情况下我们只需要用控制台就可以了。如果大家还想深入研究，可以查看 [29.3. venv — Creation of virtual environments](https://docs.python.org/3/library/venv.html) 。
