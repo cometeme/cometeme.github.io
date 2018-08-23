@@ -121,7 +121,7 @@ if __name__ == '__main__':
         test(model, device, test_loader)
 ```
 
-进行了十轮测试后，最终的正确率大约达到了 92% 。
+进行了十轮训练后，最终的正确率大约达到了 92% 。
 
 ![logistic-result](../../../assets/screenshot/MNIST-1.png)
 
