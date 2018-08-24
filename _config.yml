@@ -2,7 +2,7 @@
 title: 'cometeme的个人博客'
 description: '分享一些编程的学习笔记'
 keyword: 'cometeme, cometeme的个人博客, python, flask, React, Arduino, 树莓派, raspberry'
-url: 'https://www.cometeme.ink' # your host
+url: 'https://www.cometeme.tech' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
