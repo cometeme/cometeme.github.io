@@ -3,7 +3,7 @@ layout: post
 title: '[pytorch] 从易到难解决 MNIST 问题'
 subtitle: '机器学习入门问题'
 date: 2018-08-23
-categories: python
+categories: pytorch
 cover: '../../../assets/img/MNIST-header.jpg'
 tags: pytorch MNIST
 ---
