@@ -38,8 +38,8 @@ domain using an A record, your A record must point to one of the following IP ad
 
 ![Github Pages setting](../../../assets/screenshot/costom-domain-2.png)
 
-注意，一定要填写带 www 的网址！如果你设置了不带 www 的网址，那么如果访问 www.xxx.com 就会无连接。
+注意，一定要填写带 www 的网址！如果你设置了不带 www 的网址，那么如果访问 `www.xxx.com` 就会无连接。
 
 > If your domain has HTTPS enforcement enabled, GitHub Pages' servers will not automatically route redirects. You must configure www subdomain and root domain redirects with your domain registrar.
 
-设置完成后，我们大约需要等 2-10 分钟，之后我们打开
+设置完成后，我们大约需要等 2-10 分钟，之后我们打开 xxx.github.io 的网页，应该就会自动跳转到自己的域名。并且能够显示出一个小绿锁。
