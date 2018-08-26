@@ -34,7 +34,7 @@ domain using an A record, your A record must point to one of the following IP ad
 
 ### 2. 为 Github Page 设置 CNAME
 
-打开你要绑定域名的项目，进入设置页面。并在 custom domain 这一栏填上你的网址。
+打开你要绑定域名的项目，进入设置页面。并在 Github Pages - Custom domain 这一栏填上你的网址。
 
 ![Github Pages setting](../../../assets/screenshot/costom-domain-2.png)
 
@@ -42,4 +42,12 @@ domain using an A record, your A record must point to one of the following IP ad
 
 > If your domain has HTTPS enforcement enabled, GitHub Pages' servers will not automatically route redirects. You must configure www subdomain and root domain redirects with your domain registrar.
 
-设置完成后，我们大约需要等 2-10 分钟，之后我们打开 xxx.github.io 的网页，应该就会自动跳转到自己的域名。并且能够显示出一个小绿锁。
+设置完成后，我们刷新一下，如果底下的 Enforce HTTPS 选项已经可以勾选，那么我们钩上它。
+
+大约需要等 2-10 分钟，之后我们打开 xxx.github.io 的网页，应该就会自动跳转到自己的域名。并且能够显示出一个小绿锁。这说明这个网页使用的已经是 https 加密协议了。
+
+![complete!](../../../assets/screenshot/costom-domain-3.png)
+
+### 结语与其他文档
+
+这样，我们就给 Github Pages 绑定自己的域名了！不得不说， Github Pages 除了有些慢之外，它的设置可比自建服务器简单多了。如果你还想更进一步自定义自己的域名的话，可以参考它的官方文档： [Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) 。
