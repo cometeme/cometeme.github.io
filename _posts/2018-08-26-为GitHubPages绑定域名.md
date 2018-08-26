@@ -5,7 +5,7 @@ subtitle: '使用自己的域名来访问博客'
 date: 2018-08-26
 categories: Web
 cover: '../../../assets/img/custom-domain-header.jpg'
-tags: Web
+tags: Web Github
 ---
 
 之前，我在 Github 上建了个个人博客，不过我希望还是能使用自己的域名。现在 Github 已经支持让自定义的域名使用 https 加密了，所以我决定更换一下自己的域名。
