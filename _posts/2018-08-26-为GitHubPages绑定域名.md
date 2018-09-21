@@ -28,7 +28,7 @@ domain using an A record, your A record must point to one of the following IP ad
 
 所以，有强迫症的我最终把上面的四个 ip 都设置上去了，最终的效果就是如下的：
 
-![DNS sample](../../../assets/screenshot/costom-domain-1.png)
+![DNS sample](../../../assets/screenshot/custom-domain-1.png)
 
 这样我们就完成了 DNS 解析的设置了，接下来我们要修改 Github 上的设置：
 
@@ -36,7 +36,7 @@ domain using an A record, your A record must point to one of the following IP ad
 
 打开你要绑定域名的项目，进入设置页面。并在 Github Pages - Custom domain 这一栏填上你的网址。
 
-![Github Pages setting](../../../assets/screenshot/costom-domain-2.png)
+![Github Pages setting](../../../assets/screenshot/custom-domain-2.png)
 
 注意，一定要填写带 www 的网址！如果你设置了不带 www 的网址，那么如果访问 `www.xxx.com` 就会无连接。
 
@@ -46,7 +46,7 @@ domain using an A record, your A record must point to one of the following IP ad
 
 大约需要等 2-10 分钟，之后我们打开 xxx.github.io 的网页，应该就会自动跳转到自己的域名。并且能够显示出一个小绿锁。这说明这个网页使用的已经是 https 加密协议了。
 
-![complete!](../../../assets/screenshot/costom-domain-3.png)
+![complete!](../../../assets/screenshot/custom-domain-3.png)
 
 ### 结语与其他文档
 
