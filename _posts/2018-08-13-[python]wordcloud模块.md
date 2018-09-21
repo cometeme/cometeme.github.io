@@ -1,18 +1,18 @@
 ---
 layout: post
-title: '[python] wordcloud 库'
+title: '[python] wordcloud 模块'
 subtitle: '将一串文本转化为词云'
 date: 2018-08-13
 categories: python
 cover: '../../../assets/img/wordcloud-header.jpg'
-tags: python python库 python第三方库
+tags: python python模块 python第三方模块
 ---
 
-了解 python 时，别人会告诉你 python 的一个十分常见的作用就是“大数据分析”。不过接触了 python 的基础语法之后，你可能觉得它好像与“数据处理”没有太多的关系。的确， python 基础库的功能较为有限，不过 python 的强大之处其实在于它丰富多彩的第三方库。在 [PyPI](https://pypi.org) 这个平台上，你可以看到绝大多数第三方库的资料。而今天我们的主角是 wordcloud 库。
+了解 python 时，别人会告诉你 python 的一个十分常见的作用就是“大数据分析”。不过接触了 python 的基础语法之后，你可能觉得它好像与“数据处理”没有太多的关系。的确， python 基础模块的功能较为有限，不过 python 的强大之处其实在于它丰富多彩的第三方模块。在 [PyPI](https://pypi.org) 这个平台上，你可以看到绝大多数第三方模块的资料。而今天我们的主角是 wordcloud 模块。
 
-### 1. wordcloud 库的安装
+### 1. wordcloud 模块的安装
 
-不同于其他编程语言， python 安装第三方库的方法特别简单，只需要用 `pip` 指令就可以很轻松地完成了：
+不同于其他编程语言， python 安装第三方模块的方法特别简单，只需要用 `pip` 指令就可以很轻松地完成了：
 
 ```bash
 $ pip install wordcloud
@@ -26,7 +26,7 @@ $ pip install wordcloud
 
 首先我们先随便找一段**英文文本**，你可以将它放在字符串中，也可以存放在文件里。这里我们就以文件为例。
 
-wordcloud 库中有三个常用的函数： `WordCloud()` 、 `generate()` 、 `to_file()` 。它们的功能分别如下：
+wordcloud 模块中有三个常用的函数： `WordCloud()` 、 `generate()` 、 `to_file()` 。它们的功能分别如下：
 
 -   WordCloud() 生成一个 wordcloud 对象
 
@@ -108,7 +108,7 @@ wc = WordCloud(height=600, width=800, background_color='white')
 
 ### 4. 为词云设置 mask 属性
 
-为词云设置 `mask` 属性时，我们需要用到 scipy.misc 库中的 `imread` 这个函数。它是一个图像操作的库，在这里我们只需要知道它可以读取一个图像就行了。
+为词云设置 `mask` 属性时，我们需要用到 scipy.misc 模块中的 `imread` 这个函数。它是一个图像操作的模块，在这里我们只需要知道它可以读取一个图像就行了。
 
 让我们看一下下面这样一个代码：
 
@@ -138,7 +138,7 @@ infile.close()
 
 ![WWDC18wordclou.png](../../../assets/screenshot/wordcloud-4.png)
 
-只需要多加几步，便可以实现遮罩的效果了。 wordcloud 这个库的一个特点就是简单易用。
+只需要多加几步，便可以实现遮罩的效果了。 wordcloud 这个模块的一个特点就是简单易用。
 
 ### 结语与其他文档
 

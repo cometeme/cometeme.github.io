@@ -22,7 +22,7 @@ tags: python pip
 
 ### 2. 在使用 pip 指令时切换源
 
-接下来我们试一试切换源，下载一个 tensorflow 库
+接下来我们试一试切换源，下载一个 tensorflow 模块
 
 ```bash
 $ sudo -H pip install tensorflow -i https://mirrors.aliyun.com/pypi/simple/
@@ -30,7 +30,7 @@ $ sudo -H pip install tensorflow -i https://mirrors.aliyun.com/pypi/simple/
 
 > 如果你使用的源为 http ，那么会提示源不被信任。你只需要按照提示，在后面加上 --trusted-host <host> 就可以了
 
-可以看到，下载速度比直接下载快了许多，像 tensorflow 这种比较大的库都可以很快下载。
+可以看到，下载速度比直接下载快了许多，像 tensorflow 这种比较大的模块都可以很快下载。
 
 不过如果每次使用 pip 都需要输入一次，也有些繁琐。
 

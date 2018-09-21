@@ -1,14 +1,14 @@
 ---
 layout: post
-title: '[python] getpass 库'
+title: '[python] getpass 模块'
 subtitle: '如何才能在控制台中让用户输入的密码隐藏？'
 date: 2018-08-06
 categories: python
 cover: '../../../assets/img/getpass-header.jpg'
-tags: python python库
+tags: python python模块
 ---
 
-有些情况下，我们需要在控制台中让用户输入密码，而这个时候我们希望输入的内容被**隐藏**。回想一下 python 中的标准输入输出函数，好像并没有一个函数能够实现这样的功能。但是别慌， python 早就为我们准备了一个标准库 - getpass 库。这个库最常用的其实只有一个函数，那就是：
+有些情况下，我们需要在控制台中让用户输入密码，而这个时候我们希望输入的内容被**隐藏**。回想一下 python 中的标准输入输出函数，好像并没有一个函数能够实现这样的功能。但是别慌， python 早就为我们准备了一个标准模块 - getpass 模块。这个模块最常用的其实只有一个函数，那就是：
 
 ### getpass() - 隐式输入
 
@@ -33,4 +33,4 @@ Hello: cometeme . Your password is123123
 
 ### 结语与其他文档
 
-可能你们会很好奇，为什么 getpass 库中只有一个函数。其实它里面不止一个函数 -- 它有两个，哈哈。还有一个函数就是 `getuser()` ，它会检测所有可能存储用户名的环境变量，如果不为空就将其返回。只不过这个函数在平时编程时并不是很常用罢了。如果想要更详细地了解这个函数，可以查阅 [16.9. getpass — Portable password input](https://docs.python.org/3/library/getpass.html) 。
+可能你们会很好奇，为什么 getpass 模块中只有一个函数。其实它里面不止一个函数 -- 它有两个，哈哈。还有一个函数就是 `getuser()` ，它会检测所有可能存储用户名的环境变量，如果不为空就将其返回。只不过这个函数在平时编程时并不是很常用罢了。如果想要更详细地了解这个函数，可以查阅 [16.9. getpass — Portable password input](https://docs.python.org/3/library/getpass.html) 。
