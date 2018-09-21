@@ -1,20 +1,20 @@
 ---
 layout: post
-title: '[python] jieba 库'
+title: '[python] jieba 模块'
 subtitle: '给中文的文本分词'
 date: 2018-08-21
 categories: python
 cover: '../../../assets/img/jieba-header.jpg'
-tags: python python库 python第三方库
+tags: python python模块 python第三方模块
 ---
 
 在文本处理时，英文文本的分词一直比中文文本要好处理许多。因为英文文本只需要通过空格就可以分割，而中文的词语往往就很难从句子中分离出来。这种时候我们往往需要一个“词典”来实现分词，而寻找“词典”又是件非常麻烦的事。
 
-不过， python 强大的第三方库中早有了解决方案。在 PyPI 上面搜索“中文分词”，第一个出现的就是 jieba 库。其实 jieba 库的官方文档已经足够详细了，所以这里就对其进行一定的精简，只介绍几个常用的函数。
+不过， python 强大的第三方模块中早有了解决方案。在 PyPI 上面搜索“中文分词”，第一个出现的就是 jieba 模块。其实 jieba 模块的官方文档已经足够详细了，所以这里就对其进行一定的精简，只介绍几个常用的函数。
 
-### 1. 使用 pip 安装 jieba 库
+### 1. 使用 pip 安装 jieba 模块
 
-在第一次使用时，我们需要先使用 pip 指令安装 jieba 这个第三方库：
+在第一次使用时，我们需要先使用 pip 指令安装 jieba 这个第三方模块：
 
 ```bash
 pip install jieba
@@ -77,4 +77,4 @@ jieba.disable_parallel() # 关闭并行分词模式
 
 ### 结语与其他文档
 
-以上就介绍了 jieba 库的简单使用方法了，这样基本就能完成常用的分词操作。不过 jieba 库也支持自定义词典，如果你发现分词效果不够好，那么也可以查阅文档解决： [Github - jieba](https://github.com/fxsjy/jieba)
+以上就介绍了 jieba 模块的简单使用方法了，这样基本就能完成常用的分词操作。不过 jieba 模块也支持自定义词典，如果你发现分词效果不够好，那么也可以查阅文档解决： [Github - jieba](https://github.com/fxsjy/jieba)

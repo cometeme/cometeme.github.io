@@ -1,16 +1,16 @@
 ---
 layout: post
-title: '[python] time 库'
+title: '[python] time 模块'
 subtitle: '获取当前时间、时间格式化输出、测量运行时长'
 date: 2018-08-04
 categories: python
 cover: '../../../assets/img/time-header.jpg'
-tags: python python库
+tags: python python模块
 ---
 
-在日常编程时，我们经常会需要使用并输出系统当时的时间，或者是测量一个程序的运行时长。而这个时候，我们就需要用到 python 官方库的 time 库。
+在日常编程时，我们经常会需要使用并输出系统当时的时间，或者是测量一个程序的运行时长。而这个时候，我们就需要用到 python 官方模块的 time 模块。
 
-下面是 time 库中的几个常用的函数：
+下面是 time 模块中的几个常用的函数：
 
 ### 1. time() 函数与程序计时
 
@@ -55,7 +55,7 @@ print(end - start)
 
 ### 3. sleep() - CPU要休息一下了
 
-time库中有一个比较常用的函数 `sleep(s)` ，它可以让程序暂停 `s` 秒。这个功能在进行无限循环时可以控制循环频率（比如说爬虫）。不过， `sleep(1)` 并不代表这个程序正好暂停了1s，我们可以用上面介绍的计时程序来测试一下。
+time模块中有一个比较常用的函数 `sleep(s)` ，它可以让程序暂停 `s` 秒。这个功能在进行无限循环时可以控制循环频率（比如说爬虫）。不过， `sleep(1)` 并不代表这个程序正好暂停了1s，我们可以用上面介绍的计时程序来测试一下。
 
 ```python
 from time import *
@@ -74,7 +74,7 @@ print(end - start)
 
 ### 4. ctime() - 文本化输出时间
 
-既然 `time()` 函数显示当前时间的格式较差，那么 time 库有没有能够用易读的方式输出时间的函数呢？难道要按照秒数自己去算吗？
+既然 `time()` 函数显示当前时间的格式较差，那么 time 模块有没有能够用易读的方式输出时间的函数呢？难道要按照秒数自己去算吗？
 
 哈哈， python 这么万能，这当然已经被考虑进去了。 `ctime()` 这个函数就可以将当前时间按照字符串格式输出。
 
@@ -138,4 +138,4 @@ print(end - start)
 
 ### 结语与其他文档
 
-关于 time 库的使用就介绍到这里。当然了， time 库还有很多好玩的函数。因为不是很常用，而且限于篇幅，就不再赘述了。有关 time 库的其他的资料，大家可以看 [16.3. time — Time access and conversions](https://docs.python.org/3/library/time.html) 。
+关于 time 模块的使用就介绍到这里。当然了， time 模块还有很多好玩的函数。因为不是很常用，而且限于篇幅，就不再赘述了。有关 time 模块的其他的资料，大家可以看 [16.3. time — Time access and conversions](https://docs.python.org/3/library/time.html) 。

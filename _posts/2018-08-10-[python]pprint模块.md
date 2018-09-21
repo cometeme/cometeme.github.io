@@ -1,16 +1,16 @@
 ---
 layout: post
-title: '[python] pprint 库'
+title: '[python] pprint 模块'
 subtitle: '整齐地输出列表或是字典'
 date: 2018-08-10
 categories: python
 cover: '../../../assets/img/pprint-header.jpg'
-tags: python python库
+tags: python python模块
 ---
 
 有时候我们需要在控制台中输出一个列表或者是字典，然而预置的 `print()` 函数又不能整齐地进行输出。作为一个强迫症，我经常会在需要时自定义一个函数来进行输出。不过直到我前几天看到 python 的官方文档，我发觉我又在浪费时间了。。。
 
-其实， pprint 库就能很好地解决上面的问题。 pprint 是 "PrettyPrinter" 的缩写。看到名字大家应该就知道它是干什么的吧。它有许多强大的可选参数。不过它的使用方式与之前介绍的库不同。在使用 pprint 的输出功能之前，它要求我们先：
+其实， pprint 模块就能很好地解决上面的问题。 pprint 是 "PrettyPrinter" 的缩写。看到名字大家应该就知道它是干什么的吧。它有许多强大的可选参数。不过它的使用方式与之前介绍的模块不同。在使用 pprint 的输出功能之前，它要求我们先：
 
 ### 1. 定义一个 PrettyPrinter 对象
 
@@ -124,4 +124,4 @@ pp.pprint(ls)
 
 ### 结语与其他文档
 
-pprint 库最重要的两个函数以及他们的参数都已经介绍完了。其实它还有一些其他的函数。就比如如果你不想直接输出列表，而是要获得一个字符串，那么 `pformat` 函数就可以帮助你。它还有 `isreadable` 和 `isrecursive` 函数来判断可读性和递归性。如果大家水平好的话可以自己研究一下这个库其他函数的作用，在这里我就贴上链接： [pprint — Data pretty printer](https://docs.python.org/3/library/pprint.html)
+pprint 模块最重要的两个函数以及他们的参数都已经介绍完了。其实它还有一些其他的函数。就比如如果你不想直接输出列表，而是要获得一个字符串，那么 `pformat` 函数就可以帮助你。它还有 `isreadable` 和 `isrecursive` 函数来判断可读性和递归性。如果大家水平好的话可以自己研究一下这个模块其他函数的作用，在这里我就贴上链接： [pprint — Data pretty printer](https://docs.python.org/3/library/pprint.html)

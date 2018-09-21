@@ -1,20 +1,20 @@
 ---
 layout: post
-title: '[python] pinyin 库'
+title: '[python] pinyin 模块'
 subtitle: '将汉字转化为拼音'
 date: 2018-09-18
 categories: python
 cover: '../../../assets/img/pinyin-header.jpg'
-tags: python python库 python第三方库
+tags: python python模块 python第三方模块
 ---
 
 许多情况下，我们需要将一段汉字转换为拼音。比如我们可以用拼音来进行排版，或者是将拼音输出到其他程序，生成语音。
 
-一般将汉字转化成拼音这样的功能，我们需要一个字典来实现。比如 Mandarin.dat 。不过在 PyPI 中，已经有不少库将其封装，而这里要介绍的就是 pinyin 库。
+一般将汉字转化成拼音这样的功能，我们需要一个字典来实现。比如 Mandarin.dat 。不过在 PyPI 中，已经有不少模块将其封装，而这里要介绍的就是 pinyin 模块。
 
-### 1. pinyin 库的安装
+### 1. pinyin 模块的安装
 
-我们可以使用 pip 或 conda 指令安装 pinyin 库。
+我们可以使用 pip 或 conda 指令安装 pinyin 模块。
 
 ```bash
 $ pip install pinyin
@@ -28,7 +28,7 @@ $ conda install pinyin
 
 ### 2. 进行简单的拼音转换
 
-在 pinyin 库中，我们只需要一个简单的 `get()` 函数，就可以返回拼音的符号
+在 pinyin 模块中，我们只需要一个简单的 `get()` 函数，就可以返回拼音的符号
 
 ```python
 >>> import pinyin
@@ -66,7 +66,7 @@ $ conda install pinyin
 
 ### 4. 甚至还有中译英功能
 
-从项目 Github 的介绍来看， pinyin 这个库甚至还有中文翻译功能。不过作者也说这个功能是测试用的，而且也很久没有更新的。所以只把官方的介绍放一下：
+从项目 Github 的介绍来看， pinyin 这个模块甚至还有中文翻译功能。不过作者也说这个功能是测试用的，而且也很久没有更新的。所以只把官方的介绍放一下：
 
 ```python
 >>> import pinyin.cedict
@@ -82,4 +82,4 @@ $ conda install pinyin
 
 ### 5. 结语与其他文档
 
-pinyin 库就这样介绍完了。虽然比较简单，但也十分使用。很多时候，文本转拼音还是一件比较简单的事，但是要将拼音转化为文本就可以使用另外一个库的功能： [Pinyin2Hanzi - Github](https://github.com/letiantian/Pinyin2Hanzi)
+pinyin 模块就这样介绍完了。虽然比较简单，但也十分使用。很多时候，文本转拼音还是一件比较简单的事，但是要将拼音转化为文本就可以使用另外一个模块的功能： [Pinyin2Hanzi - Github](https://github.com/letiantian/Pinyin2Hanzi)
