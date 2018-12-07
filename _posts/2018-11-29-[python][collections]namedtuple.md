@@ -8,7 +8,7 @@ cover: '../../../assets/img/namedtuple-header.jpg'
 tags: python python模块 collections
 ---
 
-### 关于 collection 模块
+### 关于 collections 模块
 
 python 自带的一些数据类型已经非常实用了，但在一些情况下，原生的数据结构并不能满足我们的需求。而在 python 中，想从底层定义一种数据类型又特别困难。因此， python 在它的 collections 模块中又为我们提供了几种新的数据类型，灵活的使用它们将会提升我们编写程序的效率。
 
