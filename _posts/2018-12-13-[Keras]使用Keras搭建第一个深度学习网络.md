@@ -148,7 +148,7 @@ model = Sequential([
 
 后面三层 `Dense` (全连接层) 就分别代表了我们的输入层、隐藏层和输出层。 `units` 参数设置了每一层的单元个数，分别为 784 、 100 和 10 。而 `activation` 参数设置了每一层的的激活函数。可以看到，我们在前两层使用了 `relu`  (修正线性单元) 函数，而在最后一层使用了 `softmax` 函数，输出概率分布。关于这两个激活函数，大家可以自行搜索它们的原理。
 
-由此，我们的模型就编写完了。编写完成后，使用 `model.summary()` 这一个方法就可以返回模型的结构。从而就可以输出模型结构。
+由此，我们的模型就编写完了。编写完成后，使用 `model.summary()` 这一个方法就可以返回模型的结构。从而我们就可以用 print 输出出来：
 
 ```python
 # 输出模型结构
@@ -199,11 +199,11 @@ model.fit(x=X_train,
           verbose=2)
 ```
 
-首先我们传入了数据以及标签。而其中的 `epochs` 代表了要训练多少轮， `verbose` 参数设置了训练时的日志显示模式 (0 = 安静模式, 1 = 进度条, 2 = 每轮一行) 。而 `validation_split=0.2` 表示将 20% 的数据用于验证。
+首先我们传入了数据以及标签 `x` ， `y`。而 `epochs` 参数代表模型要训练的轮数， `verbose` 参数设置了训练时的日志显示模式 (0 = 安静模式, 1 = 进度条, 2 = 每轮一行) 。而 `validation_split=0.2` 表示将 20% 的数据用于验证。那么验证又是什么呢？
 
 在用于验证的数据中，我们只会评估准确率，不会对其进行训练。也就是说，验证数据集存放着这个模型**没有学习过**的样本，这样有利于我们去检测模型的适应程度。
 
-在经过一段等待后，我们的模型就训练完成了。
+运行这一段代码，在经过一段等待后，我们的模型就训练完成了。
 
 ```bash
 Train on 48000 samples, validate on 12000 samples
@@ -236,3 +236,46 @@ Epoch 10/10
 ### 结语与其他文档
 
 通过这样一个简短的教程，我们稍微了解了一些 Keras 中的内容，并且自己搭建了一个简单的网络来完成手写数字的识别。不过限于篇幅，文章中没有介绍激活函数、损失函数、优化器的原理，因此也希望大家能够去了解一下。此外，关于更多的 Keras 用法，也可以去学习它的官方文档：[Keras.io/zh/](https://keras.io/zh/) 。
+
+### 附：程序的完整代码
+
+```python
+from keras.utils import to_categorical
+from keras.models import Sequential
+from keras.layers import Flatten, Dense
+from keras.datasets import mnist
+import os
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+(X_train, y_train), (X_test, y_test) = mnist.load_data()
+
+X_train = X_train.astype('float32') / 127.5 - 1
+
+y_train = to_categorical(y_train)
+
+model = Sequential([
+    Flatten(input_shape=(28, 28)),
+    Dense(units=784,
+          activation='relu'),
+    Dense(units=100,
+          activation='relu'),
+    Dense(units=10,
+          activation='softmax')
+])
+
+# 输出模型结构
+print(model.summary())
+
+# 编译模型
+model.compile(loss='mse',
+              optimizer='sgd',
+              metrics=['acc'])
+
+# 训练模型
+model.fit(x=X_train,
+          y=y_train,
+          validation_split=0.2,
+          epochs=10,
+          verbose=2)
+```
