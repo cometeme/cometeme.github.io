@@ -244,9 +244,7 @@ from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Flatten, Dense
 from keras.datasets import mnist
-import os
 
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
