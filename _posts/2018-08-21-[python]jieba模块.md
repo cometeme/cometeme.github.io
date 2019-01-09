@@ -34,7 +34,7 @@ seg_list = jieba.lcut("我来到北京清华大学", cut_all=False)
 print("Default Mode: " + "/ ".join(seg_list))  # 精确模式
 ```
 
-```
+```plain
 Full Mode: 我/ 来到/ 北京/ 清华/ 清华大学/ 华大/ 大学
 Default Mode: 我/ 来到/ 北京/ 清华大学
 ```
@@ -54,7 +54,7 @@ print(", ".join(seg_list))
 
 分词的结果：
 
-```
+```plain
 小明, 硕士, 毕业, 于, 中国, 科学, 学院, 科学院, 中国科学院, 计算, 计算所, 后, 在, 日本, 京都, 大学, 日本京都大学, 深造
 ```
 
