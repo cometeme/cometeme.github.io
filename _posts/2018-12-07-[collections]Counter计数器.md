@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[python][collections] Counter 计数器'
+title: '[collections] Counter 计数器'
 subtitle: '使用更简单的方法来给元素计数'
 date: 2018-12-07
 categories: python

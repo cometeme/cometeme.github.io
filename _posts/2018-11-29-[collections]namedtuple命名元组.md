@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[python][collections] namedtuple 命名元组'
+title: '[collections] namedtuple 命名元组'
 subtitle: '使用命名元组提升代码可读性'
 date: 2018-11-29
 categories: python
