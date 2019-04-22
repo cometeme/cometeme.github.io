@@ -58,7 +58,7 @@ tags: Atom 插件
 
 在注释下面，我们输入 `snip` 并按下回车，编辑器就自动为我们生成了一个配置：
 
-```python
+```text
 '.source.js':
   'Snippet Name':
     'prefix': 'Snippet Trigger'
@@ -67,7 +67,7 @@ tags: Atom 插件
 
 其中，每一部分的作用如下：
 
-```python
+```text
 '.source.文件后缀（类型）':
   '代码补全的名称（没有实际作用）':
     'prefix': '触发的指令'
@@ -76,7 +76,7 @@ tags: Atom 插件
 
 例如，现在我们要实现一个简单的 C++ 自动补全模版，我们就可以这样填写：
 
-```python
+```text
 '.source.cpp':
     'ACM Template':
         'prefix': 'my_template'
@@ -114,7 +114,7 @@ tags: Atom 插件
 
 因为在前面我们已经添加过一个 `.cpp` 的模版了，所以添加第二个模版时，我们**不需要重复写 `.source.cpp` 这一行**，不然会导致报错。
 
-```python
+```text
 'include with <>':
     'prefix': 'include'
     'body': 'include <$1>'
@@ -126,7 +126,7 @@ tags: Atom 插件
 
 可是，这样的自动补全没有任何提示信息。对于 `include` 这样较为简单的也许还可以，但是对于复杂的代码补全就不行了。我们可以先用 `for` 举一个例子。我们可以先在配置文件中插入如下的代码：
 
-```python
+```text
 'Auto Complete for':
     'prefix': 'for'
     'body': '''
@@ -143,7 +143,7 @@ tags: Atom 插件
 
 所以我们可以将刚才的 `for` 自动补全改为以下形式：
 
-```python
+```text
 'Auto Complete for':
     'prefix': 'for'
     'body': '''
