@@ -55,12 +55,9 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribbble, uicn, jianshu, medium, linkedin
 sns:
-#  weibo: '//weibo.com/lovecolcol'
-#  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
-#  instagram: '//www.instagram.com/steveliaocn'
   zhihu: 'https://www.zhihu.com/people/cometeme/activities'
-  linkedin: 'https://www.linkedin.com/in/cometeme/'
   github: 'https://github.com/cometeme'
+  linkedin: 'https://www.linkedin.com/in/cometeme/'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
