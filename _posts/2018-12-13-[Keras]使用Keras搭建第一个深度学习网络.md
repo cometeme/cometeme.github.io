@@ -4,7 +4,7 @@ title: '[Keras] 使用 Keras 搭建第一个深度学习网络'
 subtitle: 'Keras 入门教程'
 date: 2018-12-13
 categories: Keras
-cover: '../../../assets/img/Keras-beginning-header.png'
+cover: '/assets/img/Keras-beginning-header.png'
 tags: python Keras DeepLearning MNIST
 ---
 
@@ -22,7 +22,7 @@ tags: python Keras DeepLearning MNIST
 pip install keras
 ```
 
-或者，如果你使用 anaconda
+或者，如果你使用 anaconda 。
 
 ```bash
 conda install keras
@@ -47,7 +47,7 @@ Using TensorFlow backend.
 
 MNIST 数据集是一个手写数字图像的数据集，它包含了 60,000 张训练用的图像，以及有 10,000 张测试图像。每一个数字图像都是 28x28 的，而下面是其中一部分的图像。
 
-![MNIST_dataset](../../../assets/screenshot/Keras-beginning-1.jpg)
+![MNIST_dataset](/assets/screenshot/Keras-beginning-1.jpg)
 
 了解了什么是 MNIST 数据集之后，我们需要在代码中导入这个数据集。
 
@@ -137,7 +137,7 @@ y_train = to_categorical(y_train)
 
 接下来确定隐藏层，为了简化，我们只设计一层隐藏层，并且将其大小设为 100  (隐藏层的大小完全可以自由设置，不一定要完全按照教程) 。于是，我们的多层感知器就设计完成了：
 
-![Model](../../../assets/screenshot/Keras-beginning-2.png)
+![Model](/assets/screenshot/Keras-beginning-2.png)
 
 > 模型的一开始使用了一个展平层，这是因为我们的输入是一张 28x28 的图像，而如果要用于多层感知器，我们需要先使用展平层将其展成一维。
 
