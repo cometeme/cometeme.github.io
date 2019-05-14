@@ -18,8 +18,7 @@ tags: Web Github
 
 翻阅 Github 上关于自定义域名的介绍，只需要将一个 A 设置指向下面其中的一个 ip 地址，就能开启 https 加密了。当然， A 的主机记录需要设置为 @ 。
 
-> If you configured your custom
-domain using an A record, your A record must point to one of the following IP addresses for HTTPS to work:
+> If you configured your custom domain using an A record, your A record must point to one of the following IP addresses for HTTPS to work:
 >
 > -   185.199.108.153
 > -   185.199.109.153
