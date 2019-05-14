@@ -86,6 +86,8 @@ from keras.datasets import mnist
 
 $$ result = \frac{raw}{127.5} - 1 $$
 
+这个公式转化为代码也十分简单，不过要记住先将其转化为浮点型再进行运算。
+
 ```python
 X_train = X_train.astype('float32') / 127.5 - 1
 ```
