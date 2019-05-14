@@ -4,7 +4,7 @@ title: '[collections] defaultdict 默认字典'
 subtitle: '空元素含有默认值的字典类型'
 date: 2019-03-05
 categories: python
-cover: '../../../assets/img/defaultdict-header.jpg'
+cover: '/assets/img/defaultdict-header.jpg'
 tags: python python模块 collections
 ---
 

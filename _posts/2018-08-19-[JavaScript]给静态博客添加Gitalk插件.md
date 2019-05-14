@@ -4,7 +4,7 @@ title: '[JavaScript] 给静态博客博客添加 Gitalk 插件'
 subtitle: '基于 Github Issues 的评论解决方案'
 date: 2018-08-19
 categories: JavaScript
-cover: '../../../assets/img/Gitalk-header.jpg'
+cover: '/assets/img/Gitalk-header.jpg'
 tags: Jekyll Github Javascript CSS HTML
 ---
 
@@ -93,7 +93,7 @@ Gitalk 对象还有许多参数，其中较为常用的还有以下两个：
 
 以上我们就完成了代码内容，现在我们生成静态页面，打开一篇文章，应该就可以在相应的区域看到 Gitalk 的插件了。第一次使用时，我们需要“**初始化issue**”，这个时候你需要用你的 Github 账号登陆，然后点击一下初始化按钮（不要点很多次，不然会新建多个issue），等进度完成后，刷新页面，你应该就能够看到评论模块了。
 
-![Gitalk-sample](../../../assets/screenshot/Gitalk-1.png)
+![Gitalk-sample](/assets/screenshot/Gitalk-1.png)
 
 目前来说我们只能通过手动添加来给每篇文章创建一个评论，之后可以写一个脚本来完成自动初始化，但是稍有些复杂，所以如果想要了解可以自行搜索。
 

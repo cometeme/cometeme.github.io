@@ -4,7 +4,7 @@ title: '[Atom] snippets - 自定义代码补全'
 subtitle: '强大好用的内置代码补全插件'
 date: 2019-04-22
 categories: Atom
-cover: '../../../assets/img/snippets.jpg'
+cover: '/assets/img/snippets.jpg'
 tags: Atom 插件
 ---
 

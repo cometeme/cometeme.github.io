@@ -4,7 +4,7 @@ title: '[collections] Counter 计数器'
 subtitle: '使用更简单的方法来给元素计数'
 date: 2018-12-07
 categories: python
-cover: '../../../assets/img/Counter-header.jpg'
+cover: '/assets/img/Counter-header.jpg'
 tags: python python模块 collections
 ---
 

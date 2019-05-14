@@ -4,7 +4,7 @@ title: '[python] pinyin 模块'
 subtitle: '将汉字转化为拼音'
 date: 2018-09-18
 categories: python
-cover: '../../../assets/img/pinyin-header.jpg'
+cover: '/assets/img/pinyin-header.jpg'
 tags: python python模块 python第三方模块
 ---
 

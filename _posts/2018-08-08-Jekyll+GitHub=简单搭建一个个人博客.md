@@ -4,7 +4,7 @@ title: 'Jekyll + Github = 简单搭建一个个人博客'
 subtitle: '轻量化静态博客搭建指南'
 date: 2018-08-08
 categories: Jekyll
-cover: '../../../assets/img/Jekyll-header.jpg'
+cover: '/assets/img/Jekyll-header.jpg'
 tags: Jekyll Github Gitee Markdown HTML
 ---
 
@@ -18,7 +18,7 @@ tags: Jekyll Github Gitee Markdown HTML
 
 解压完成之后，你应该能看到这样一些文件夹。以我的网站为例
 
-![Files](../../../assets/screenshot/Jekyll-1.png)
+![Files](/assets/screenshot/Jekyll-1.png)
 
 不同的模版可能文件的个数不一样，但是一定会有这几个关键文件：
 
@@ -51,7 +51,7 @@ tags: Jekyll Github Gitee Markdown HTML
 
 先打开 `README.md` 这个文件并仔细阅读。打开 `_config.yml` ，根据里面有的注释进行修改。因为没有搭建本地环境。所以修改后的成果是无法查看的。当然 `_config.yml` 在之后都可以随时修改，所以在稍微修改之后，我们就可以先进行下一步。等到网站搭建完成了之后可以继续细调。
 
-![_config.yml](../../../assets/screenshot/Jekyll-2.png)
+![_config.yml](/assets/screenshot/Jekyll-2.png)
 
 ### 4.注册 GitHub/Gitee 账号
 
@@ -75,7 +75,7 @@ tags: Jekyll Github Gitee Markdown HTML
 
 项目创建完成后，我们打开项目，将本地的修改过的模版文件框选拖至窗口中，等待上传完成后提交。（底下的介绍可以用默认的，建议直接提交至 master 分支）。提交完成后，就是以下的效果了：
 
-![site preview](../../../assets/screenshot/Jekyll-3.png)
+![site preview](/assets/screenshot/Jekyll-3.png)
 
 ### 6.开启 Pages 服务
 
@@ -83,21 +83,21 @@ tags: Jekyll Github Gitee Markdown HTML
 
 选中菜单的 `Settings` 选单。
 
-![settings menu](../../../assets/screenshot/Jekyll-4.png)
+![settings menu](/assets/screenshot/Jekyll-4.png)
 
 找到下方的 `GitHub Pages` 选项。（本图中已经开启，如果没有开启只需要点击相应的按钮开启即可）其中上方提示 "Your site is published at <https://cometeme.github.io/>" 说明已经部署完成了。这个时候你点击那个链接就可以看到自己的网页。（ GitHub 的页面更新速度较慢，有些时候做一定的更改要过段时间刷新才生效）
 
-![GitHub Pages settings](../../../assets/screenshot/Jekyll-5.png)
+![GitHub Pages settings](/assets/screenshot/Jekyll-5.png)
 
 -   Gitee
 
 选择菜单中的 `服务` 。
 
-![服务-码云 Pages ](../../../assets/screenshot/Jekyll-6.png)
+![服务-码云 Pages ](/assets/screenshot/Jekyll-6.png)
 
 进入 `码云 Pages` 页面。并在下方选中 master 分支，点击部署。部署完成后同样会给出一个链接。点开就是架好的博客了。
 
-![码云  Pages ](../../../assets/screenshot/Jekyll-7.png)
+![码云  Pages ](/assets/screenshot/Jekyll-7.png)
 
 如果到这里你的网页能够成功显示，那么恭喜你，你完成了建站所需要的所有步骤。接下来就只需要对界面再进行一些微调（比如修改首页图片，自定义 `about` 页面等），并发布你的文章。
 
@@ -126,7 +126,7 @@ title: 'Jekyll + Github = 简单搭建一个个人博客'
 subtitle: ‘轻量化静态博客搭建指南’
 date: 2018-08-08
 categories: Jekyll+GitHub
-cover: '../../../assets/img/Jekyll-header.jpg'
+cover: '/assets/img/Jekyll-header.jpg'
 tags: Jekyll Github Gitee Markdown HTML JavaScript
 ---
 ```

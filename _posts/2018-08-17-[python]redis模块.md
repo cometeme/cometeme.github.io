@@ -4,7 +4,7 @@ title: '[python] redis 模块'
 subtitle: '简单地实现 key-value 存储'
 date: 2018-08-17
 categories: python
-cover: '../../../assets/img/redis-header.jpg'
+cover: '/assets/img/redis-header.jpg'
 tags: python python模块 python第三方模块
 ---
 
@@ -32,7 +32,7 @@ $ pip install redis
 $ redis-server
 ```
 
-![Redis_bash](../../../assets/screenshot/redis-1.png)
+![Redis_bash](/assets/screenshot/redis-1.png)
 
 > 在调试完成后，我们应该使用 conf 配置文件打开 Redis 服务器，不然会有安全性隐患。
 
@@ -148,7 +148,7 @@ print(r.getData('username'))
 '[10, 20, 90, (30, 10, 29)]'
 ```
 
-其实问题在于，我们存入一个值，而取出时为 byte 类型。这意味着我们存入时会先将信息变为 byte 类型，就是这一步导致之后我们无法区分数据类型。那怎样才能让我们的数据“**原样进，原样出**”呢？等等，是不是想到了我们之前介绍的 pickle 模块？[[python] pickle 模块](../../../python/2018/08/python-pickle模块.html)
+其实问题在于，我们存入一个值，而取出时为 byte 类型。这意味着我们存入时会先将信息变为 byte 类型，就是这一步导致之后我们无法区分数据类型。那怎样才能让我们的数据“**原样进，原样出**”呢？等等，是不是想到了我们之前介绍的 pickle 模块？[[python] pickle 模块](/python/2018/08/python-pickle模块.html)
 
 ### 5. redis + pickle
 
