@@ -1,4 +1,6 @@
-_site
+/.vscode
+/_site
+/_drafts
+/node_modules
 */.DS_Store
 .DS_Store
-.vscode
