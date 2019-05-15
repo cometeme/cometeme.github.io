@@ -107,7 +107,7 @@ array([5, 0, 4, 1, 9, 2, 1, 3, 1, 4], dtype=uint8)
 
 那什么是 One-Hot 编码呢？我们可以用一个公式来表示编码的过程：
 
-$$ encoded = [a_1, a_2, a_3, ..., a_n] $$
+$$ encoded = \begin{bmatrix} a_1 & a_2 & a_3 & ... & a_n \end{bmatrix} $$
 
 $$ a_i = 1 \ \ \ (i = y) $$
 
