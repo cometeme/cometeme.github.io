@@ -4,7 +4,7 @@ title: '[python] wordcloud 模块'
 subtitle: '将一串文本转化为词云'
 date: 2018-08-13
 categories: python
-cover: '/assets/banner/wordcloud-header.jpg'
+cover: '/assets/image/wordcloud-header.jpg'
 tags: python python模块 python第三方模块
 ---
 

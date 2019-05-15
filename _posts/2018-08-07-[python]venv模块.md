@@ -4,7 +4,7 @@ title: '[python] venv 模块'
 subtitle: '创建一个轻量化的虚拟环境'
 date: 2018-08-07
 categories: python
-cover: '/assets/banner/venv-header.jpg'
+cover: '/assets/image/venv-header.jpg'
 tags: python python模块
 ---
 

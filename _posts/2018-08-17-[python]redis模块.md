@@ -4,7 +4,7 @@ title: '[python] redis 模块'
 subtitle: '简单地实现 key-value 存储'
 date: 2018-08-17
 categories: python
-cover: '/assets/banner/redis-header.jpg'
+cover: '/assets/image/redis-header.jpg'
 tags: python python模块 python第三方模块
 ---
 

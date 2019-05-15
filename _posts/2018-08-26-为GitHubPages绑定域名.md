@@ -4,7 +4,7 @@ title: '为 Github Pages 绑定域名'
 subtitle: '使用自己的域名来访问博客'
 date: 2018-08-26
 categories: Web
-cover: '/assets/banner/custom-domain-header.jpg'
+cover: '/assets/image/custom-domain-header.jpg'
 tags: Web Github
 ---
 

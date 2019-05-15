@@ -4,7 +4,7 @@ title: '[python] 为 pip 设置国内源'
 subtitle: '让 pip 下载更流畅'
 date: 2018-08-15
 categories: python
-cover: '/assets/banner/pip-header.jpg'
+cover: '/assets/image/pip-header.jpg'
 tags: python pip
 ---
 

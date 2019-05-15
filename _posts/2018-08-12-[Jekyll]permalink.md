@@ -4,7 +4,7 @@ title: '[Jekyll] permalink'
 subtitle: '让文章的链接地址变得更整齐美观'
 date: 2018-08-12
 categories: Jekyll
-cover: '/assets/banner/permalink-header.jpg'
+cover: '/assets/image/permalink-header.jpg'
 tags: Jekyll Markdown HTML
 ---
 

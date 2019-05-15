@@ -4,7 +4,7 @@ title: '[python] jieba 模块'
 subtitle: '给中文的文本分词'
 date: 2018-08-21
 categories: python
-cover: '/assets/banner/jieba-header.jpg'
+cover: '/assets/image/jieba-header.jpg'
 tags: python python模块 python第三方模块
 ---
 

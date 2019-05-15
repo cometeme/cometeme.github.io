@@ -4,7 +4,7 @@ title: '[Keras] 使用 Keras 搭建第一个深度学习网络'
 subtitle: 'Keras 入门教程'
 date: 2018-12-13
 categories: Keras
-cover: '/assets/banner/Keras-beginning-header.png'
+cover: '/assets/image/Keras-beginning-header.png'
 tags: python Keras DeepLearning MNIST
 ---
 

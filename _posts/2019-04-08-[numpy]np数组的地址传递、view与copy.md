@@ -4,7 +4,7 @@ title: '[numpy] 深入理解 numpy 数组的三种赋值方式'
 subtitle: 'np 数组的地址传递、view 与 copy'
 date: 2019-04-08
 categories: python
-cover: '/assets/banner/numpy-array-assign-header.jpg'
+cover: '/assets/image/numpy-array-assign-header.jpg'
 tags: python python模块 python第三方模块 numpy
 ---
 

@@ -4,7 +4,7 @@ title: '[JavaScript] 给静态博客博客添加 Gitalk 插件'
 subtitle: '基于 Github Issues 的评论解决方案'
 date: 2018-08-19
 categories: JavaScript
-cover: '/assets/banner/Gitalk-header.jpg'
+cover: '/assets/image/Gitalk-header.jpg'
 tags: Jekyll Github Javascript CSS HTML
 ---
 
