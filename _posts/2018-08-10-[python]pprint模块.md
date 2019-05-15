@@ -4,7 +4,7 @@ title: '[python] pprint 模块'
 subtitle: '整齐地输出列表或是字典'
 date: 2018-08-10
 categories: python
-cover: '/assets/img/pprint-header.jpg'
+cover: '/assets/banner/pprint-header.jpg'
 tags: python python模块
 ---
 

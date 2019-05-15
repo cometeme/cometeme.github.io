@@ -4,7 +4,7 @@ title: '[python] pickle 模块'
 subtitle: '将数据腌制成完美的泡菜'
 date: 2018-08-06
 categories: python
-cover: '/assets/img/pickle-header.jpg'
+cover: '/assets/banner/pickle-header.jpg'
 tags: python python模块
 ---
 

@@ -4,7 +4,7 @@ title: '[python] PyInstaller 模块'
 subtitle: '听说你想把 python 程序打包成 exe ？'
 date: 2018-08-05
 categories: python
-cover: '/assets/img/PyInstaller-header.jpg'
+cover: '/assets/banner/PyInstaller-header.jpg'
 tags: python python模块 python第三方模块
 ---
 

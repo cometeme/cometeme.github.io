@@ -4,7 +4,7 @@ title: '[collections] namedtuple 命名元组'
 subtitle: '使用命名元组提升代码可读性'
 date: 2018-11-29
 categories: python
-cover: '/assets/img/namedtuple-header.jpg'
+cover: '/assets/banner/namedtuple-header.jpg'
 tags: python python模块 collections
 ---
 

@@ -4,7 +4,7 @@ title: '[python] redis 模块'
 subtitle: '简单地实现 key-value 存储'
 date: 2018-08-17
 categories: python
-cover: '/assets/img/redis-header.jpg'
+cover: '/assets/banner/redis-header.jpg'
 tags: python python模块 python第三方模块
 ---
 
@@ -32,7 +32,7 @@ $ pip install redis
 $ redis-server
 ```
 
-![Redis_bash](/assets/screenshot/redis-1.png)
+![Redis_bash](/assets/image/redis-1.png)
 
 > 在调试完成后，我们应该使用 conf 配置文件打开 Redis 服务器，不然会有安全性隐患。
 

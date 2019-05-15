@@ -4,7 +4,7 @@ title: '[python] random 模块'
 subtitle: '生成随机化的数据，抑或是打乱一个列表'
 date: 2018-08-03
 categories: python
-cover: '/assets/img/random-header.jpg'
+cover: '/assets/banner/random-header.jpg'
 tags: python python模块
 ---
 

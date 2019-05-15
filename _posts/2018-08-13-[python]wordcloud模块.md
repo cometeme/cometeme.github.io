@@ -4,7 +4,7 @@ title: '[python] wordcloud 模块'
 subtitle: '将一串文本转化为词云'
 date: 2018-08-13
 categories: python
-cover: '/assets/img/wordcloud-header.jpg'
+cover: '/assets/banner/wordcloud-header.jpg'
 tags: python python模块 python第三方模块
 ---
 
@@ -56,7 +56,7 @@ infile.close()
 
 运行完成后，可以看到生成了这样一张图片：
 
-![WordCloudSimpleBlack](/assets/screenshot/wordcloud-1.png)
+![WordCloudSimpleBlack](/assets/image/wordcloud-1.png)
 
 怎么样，是不是很神奇。只需要简单的三个函数，我们就能实现一个词云的输出。当然了，如果单纯地使用默认参数，那未免也太单调了。所以我们还需要进行自定义。
 
@@ -100,7 +100,7 @@ wc = WordCloud(height=600, width=800, background_color='white')
 
 我们应该会得到如下的图片：
 
-![WordCloudSimpleWhite](/assets/screenshot/wordcloud-2.png)
+![WordCloudSimpleWhite](/assets/image/wordcloud-2.png)
 
 是不是看起来比上面的黑色图片好多了。可能你会发现这个词云中没有 200 个单词。其实这是因为我挑的文本过短，而且 wordcloud 本身会过滤一些较短的单词，所以导致最后输出的结果较少了。
 
@@ -132,11 +132,11 @@ infile.close()
 
 可以看到，我们需要先导入 `imread`，然后用 `imread` 读取一个图片文件。之后我们将读取到的文件设置为 wordcloud 对象的 `mask` 属性。那这样可以实现怎么样的一个效果呢？
 
-![WWDC18.png](/assets/screenshot/wordcloud-3.png)
+![WWDC18.png](/assets/image/wordcloud-3.png)
 
 它可以读入上面这样一个图片，最后输出以下的图案：
 
-![WWDC18wordclou.png](/assets/screenshot/wordcloud-4.png)
+![WWDC18wordclou.png](/assets/image/wordcloud-4.png)
 
 只需要多加几步，便可以实现遮罩的效果了。 wordcloud 这个模块的一个特点就是简单易用。
 

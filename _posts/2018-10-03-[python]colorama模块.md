@@ -4,7 +4,7 @@ title: '[python] colorama 模块'
 subtitle: '改变控制台输出文本的颜色'
 date: 2018-10-03
 categories: python
-cover: '/assets/img/colorama-header.jpg'
+cover: '/assets/banner/colorama-header.jpg'
 tags: python python模块 python第三方模块
 ---
 
