@@ -1,22 +1,24 @@
 ---
 layout: post
-title: '[Atom] snippets - 自定义代码补全'
+title: '[vscode] snippets - 自定义代码补全'
 subtitle: '强大好用的内置代码补全插件'
 date: 2019-04-22
-categories: Atom
+categories: vscode
 cover: '/assets/image/snippets-header.png'
-tags: Atom 插件
+tags: vscode Atom 插件
 ---
 
 ### 前言
 
 在平时写代码时，自动补全一直是一个非常实用的功能。然而，很多代码块并**没有内置的自动补全**，这时就需要我们自己设置。或是在另一些时候，我们会用到**模版**程序，例如 ACM 竞赛时需要用到的宏定义，如果能够通过输入一行指令，自动补全整个模版，那将会方便许多。
 
-近些年来，代码编辑器都自带了自定义代码补全的功能。在 Visual Studio Code 和 Atom 等编辑器中，我们主要可以通过内置的 snippets 插件来自定义自动补全的方式。那么接下来，我将会介绍在 Atom 中的 snippets 配置方法。
+近些年来，代码编辑器都自带了自定义代码补全的功能。在 Visual Studio Code 和 Atom 等编辑器中，我们主要可以通过内置的 snippets 插件来自定义自动补全的方式。那么接下来，我将会介绍在两种编译器中的 snippets 配置方法。
 
-### 1. 文件位置
+### 1. Atom 下的 snippets 设置
 
-不同于 vsc ，在 Atom 中修改 snippets 需要手动打开配置文件。
+#### 1.1 文件位置
+
+在 Atom 中修改 snippets 需要手动打开配置文件。
 
 在 Windows 平台下，文件的位置在：
 
@@ -54,7 +56,7 @@ tags: Atom 插件
 
 粗略的阅读完注释之后，我们就可以开始我们的配置环节了。
 
-### 2. snippet 文件的配置
+### 1.2 snippet 文件的配置
 
 在注释下面，我们输入 `snip` 并按下回车，编辑器就自动为我们生成了一个配置：
 
@@ -106,7 +108,7 @@ tags: Atom 插件
 
 保存之后，我们打开一个 C++ 文件，输入 `my_template` 并按回车 / `Tab` 时，便会自动填充整个模版。
 
-### 3. snippets 的高级使用技巧
+### 1.3 snippets 的高级使用技巧
 
 填充模版并不能够完美的应用于所有的场景。很多时候，像输入 `for` 这样的语句时，我们希望编辑器能够自动补全整个代码块，并且将其中一些部分变为可替换。当我们按下 Tab 时，便会自动切换到下一个区块内，便于我们填写。那么这样的功能怎么实现呢？
 
@@ -155,6 +157,57 @@ tags: Atom 插件
 ```
 
 这样，在使用 `for` 的自动补全时，会默认生成 `Start` 等内容。但是补全后或是当我们按下 `Tab` 切换位置时，编译器会将这些提示文本选中，当输入新的内容时就会将这些提示文本替换，这样一来既不会影响正常的编程体验，也可以起到一定的提示功能了。
+
+### 2. vscode 下的 snippets 设置
+
+#### 2.1 打开配置文件
+
+在 vscode 中，可以通过 `Ctrl+Shift+P` (macOS 上为 `Cmd+Shift+P`) 打开命令窗口。输入 `snippets`，就会出现 `Config User Snippets` 这个选项。按下回车，并选择一种语言，就可以打开 snippets 的配置文件。
+
+> 需要注意的是，和 Atom 不一样， vscode 下不同语言的 snippets 是定义在不同的文件中的。
+
+#### 2.2 调整 snippets 配置
+
+打开 snippets 文件，就会看到下方的提示：
+
+```
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+}
+```
+
+由于 vscode 中是使用 json 来存放配置文件的，所以他的格式与 Atom 有些不同。我们以它官方的示例为例：
+
+```
+Print to console": {  // 名称
+ 	"prefix": "log",  // 触发语句
+ 	"body": [         // 补全内容
+ 		"console.log('$1');",
+ 		"$2"
+ 	],
+ 	"description": "Log output to console"
+}
+```
+
+首先我们可以看到，它不需要像 Atom 一样在最开始标记语言，因为 vscode 下不同语言的 snippets 是放在不同文件里的。
+
+其次，因为 json 格式不支持使用三个 `'` 来记录原字符串，我们只能用一个字符串表示一行，两行之间用逗号隔开。还需要注意的是，字符串内不能有 `Tab` ，我们需要将其转化为四个空格。
+
+其余的部分，都与上方 Atom 教程内的内容比较相似了，在这里不再赘述。
+
+唯一的区别还有， vscode 中除了 `$1` `$2` 等，还有 `$0` 标记补全后的结束位置，具体效果大家也可以自己体验一下。
 
 ### 结语
 
