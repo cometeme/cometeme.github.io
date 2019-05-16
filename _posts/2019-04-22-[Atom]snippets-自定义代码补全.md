@@ -170,7 +170,7 @@ tags: vscode Atom 插件
 
 打开 snippets 文件，就会看到下方的提示：
 
-```
+```text
 {
 	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
@@ -190,7 +190,7 @@ tags: vscode Atom 插件
 
 由于 vscode 中是使用 json 来存放配置文件的，所以他的格式与 Atom 有些不同。我们以它官方的示例为例：
 
-```
+```text
 Print to console": {  // 名称
  	"prefix": "log",  // 触发语句
  	"body": [         // 补全内容
