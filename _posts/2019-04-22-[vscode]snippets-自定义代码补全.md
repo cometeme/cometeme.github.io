@@ -188,7 +188,7 @@ tags: vscode Atom 插件
 }
 ```
 
-由于 vscode 中是使用 json 来存放配置文件的，所以他的格式与 Atom 有些不同。我们以它官方的示例为例：
+由于 vscode 中是使用 json 来存放配置文件的，所以格式与 Atom 有些不同。我们以它官方的示例为例：
 
 ```text
 Print to console": {  // 名称
