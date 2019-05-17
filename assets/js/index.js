@@ -42,7 +42,7 @@ $(document).ready(function() {
         });
         logo.css({
           background:
-            "url(/assets/icons/logo_" + themeStyle + ".svg) no-repeat center",
+            "url({{ '/assets/icons/logo_' | relative_url }}" + themeStyle + ".svg) no-repeat center",
           "background-size": "100% 100%"
         });
         navText.css("color", "#666");
@@ -54,7 +54,7 @@ $(document).ready(function() {
           "box-shadow": "none"
         });
         logo.css({
-          background: "url(/assets/icons/logo.svg) no-repeat center",
+          background: "url({{ '/assets/icons/logo.svg' | relative_url }}) no-repeat center",
           "background-size": "100% 100%"
         });
         navText.css("color", "#fff");
