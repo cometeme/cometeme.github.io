@@ -66,41 +66,40 @@
       </ul>
       {% endif %}
     </section>
-
-    <section class="post-footer-item comment">
-      <div id="comment_container"></div>
-    </section>
-
     <section class="post-footer-item read-next">
       {% if page.next.url %}
       <div class="read-next-item">
-        <a href="{{ page.next.url }}" class="read-next-link"></a>
+        <a href="{{ page.next.url | relative_url }}" class="read-next-link"></a>
         <section>
           <span>{{ page.next.title }}</span>
           <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
         </section>
         {% if page.next.cover %}
         <div class="filter"></div>
-        <img src="{{ page.next.cover }}" alt="">
+        <img src="{{ page.next.cover | relative_url }}" alt="">
         {% endif %}
      </div>
       {% endif %}
 
       {% if page.previous.url %}
       <div class="read-next-item">
-        <a href="{{ page.previous.url }}" class="read-next-link"></a>
+        <a href="{{ page.previous.url | relative_url }}" class="read-next-link"></a>
           <section>
             <span>{{ page.previous.title }}</span>
             <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
           </section>
           {% if page.previous.cover %}
           <div class="filter"></div>
-          <img src="{{ page.previous.cover }}" alt="">
+          <img src="{{ page.previous.cover | relative_url }}" alt="">
           {% endif %}
       </div>
       {% endif %}
     </section>
-
+    {% if site.comments.disqus %}
+    <section class="post-footer-item comment">
+        <div id="disqus_thread"></div>
+    </section>
+    {% endif %}
   </section>
 
   {% include footer.html %}
