@@ -25,7 +25,7 @@
     </div>
     {% if page.cover %}
     <div class="filter"></div>
-      <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;"></div>
+      <div class="post-cover" style="background: url('{{ page.cover | relative_url }}') center no-repeat; background-size: cover;"></div>
     {% endif %}
   </header>
 
@@ -104,7 +104,7 @@
 
   {% include footer.html %}
 
-  <script src="/assets/js/social-share.js"></script>
+  <script src="{{ "/assets/js/social-share.js" | relative_url }}"></script>
   <script>
     socialShare('.social-share', {
       sites: [
@@ -140,7 +140,7 @@
     {% endif %}
 
   <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
-  <script src="{{ /assets/js/index.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/index.js" | relative_url }}"></script>
 </body>
 
 </html>
