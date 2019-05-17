@@ -5,7 +5,7 @@ keyword: 'cometeme, cometeme的个人博客, python, Adelard Collins, 深度学�
 url: 'https://www.cometeme.tech' # your host
 
 # if you don't need baseurl, you should leave this value blank.
-baseurl: ''
+baseurl: '/blog'
 
 # Navigation links
 nav:
