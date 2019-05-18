@@ -137,11 +137,11 @@ y_train = to_categorical(y_train)
 
 在生物学中，一个神经元的模型大约是下图所示：
 
-![生物神经元](/assets/image/Keras-beginning-2.png)
+![生物神经元](/assets/image/Keras-beginning-2.jpg)
 
 而人工神经元模拟了生物神经元的机理，将其抽象为下面所示的数学模型：
 
-![人工神经元](/assets/image/Keras-beginning-3.png)
+![人工神经元](/assets/image/Keras-beginning-3.jpg)
 
 如果将其写成公式，可以表达为以下的形式：
 
