@@ -63,6 +63,11 @@
       </ul>
       {% endif %}
     </section>
+
+    <section class="post-footer-item comment">
+      <div id="comment_container"></div>
+    </section>
+
     <section class="post-footer-item read-next">
       {% if page.next.url %}
       <div class="read-next-item">
@@ -119,7 +124,6 @@
   {% if site.comments.gitalk %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.5.0/gitalk.min.js"></script>
   <script>
-
   var gitalk = new Gitalk({
       clientID: '{{ site.comments.gitalk_clientID }}',
       clientSecret: '{{ site.comments.gitalk_Secret }}',
@@ -132,9 +136,8 @@
       createIssueManually: true
     })
     gitalk.render('comment_container')
-
     </script>
-    {% endif %}
+  {% endif %}
 
   <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/index.js" | relative_url }}"></script>
