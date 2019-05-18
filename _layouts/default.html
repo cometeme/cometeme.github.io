@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
+
 <body>
-    <!--[if lt IE 10]>
-    <div class="alert-danger" role="alert">你的浏览器版本太低，推荐使用 Chrome 浏览器查看本博客！</div>
-    <![endif]-->
-    <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
-    <div class="visible">
-      {{ content }}
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="{{ "/assets/js/prism.js" | relative_url }}></script>
-    <script src="{{ "/assets/js/index.js" | relative_url }}"></script>
+  <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
+  <div class="visible">
+    {{ content }}
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="{{ "/assets/js/prism.js" | relative_url }}></script>
+    <script src=" {{ "/assets/js/index.js" | relative_url }}"></script>
 </body>
+
 </html>
