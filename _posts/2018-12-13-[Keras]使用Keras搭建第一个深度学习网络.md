@@ -165,11 +165,11 @@ $$ output = activation(W^T \cdot X + b) $$
 
 首先，输入的向量为 $X_1$ ，维度为 3 ：
 
-$$ X_1 = \begin{bmatrix} x1 \\ x2 \\ x3 \end{bmatrix} $$
+$$ X_1 = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} $$
 
 在两层之间，有权重矩阵 $W_{1,2}$ 和偏置向量 $B_{1,2}$ ：
 
-$$ W_{1,2} = \begin{bmatrix} w_{11} & w_{12} & w_{13} & w_{14} \\ w_{21} & w_{22} & w_{23} & w_{24} \\ w_{31} & w_{32} & w_{33} & w_{34} \end{bmatrix} \ \ \  B_{1,2} = \begin{bmatrix} b1 \\ b2 \\ b3 \\ b4 \end{bmatrix} $$
+$$ W_{1,2} = \begin{bmatrix} w_{11} & w_{12} & w_{13} & w_{14} \\ w_{21} & w_{22} & w_{23} & w_{24} \\ w_{31} & w_{32} & w_{33} & w_{34} \end{bmatrix} \ \ \  B_{1,2} = \begin{bmatrix} b_1 \\ b_2 \\ b_3 \\ b_4 \end{bmatrix} $$
 
 那么，我们得到的输出 $X_2$ 的计算公式是：
 
