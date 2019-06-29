@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[vscode] Markdown Preview Enhanced'
-subtitle: '强大好用的内置代码补全插件'
+title: '[vscode] Markdown Preview Enhanced'
+subtitle: '全能的 Markdown 增强插件'
 date: 2019-06-29
 categories: vscode
 cover: '/assets/image/mpe-header.png'
@@ -22,7 +22,7 @@ tags: vscode 插件 Markdown
 
 在插入公式时，我们可以使用 `$` 来表示行内公式，他会嵌入到一行文本中。例如下面这一段文本：
 
-```
+```text
 质能方程 $E=mc^2$，其中 $m=\frac{m_0}{\sqrt{1-v^2/c^2}}$ 为相对论质量， $m_0$ 为物体的静止质量。
 ```
 
@@ -32,7 +32,7 @@ tags: vscode 插件 Markdown
 
 而使用 `$$` ，可以代表行间公式，它将会被单独渲染成一行，并且居中显示。例如下面这一段公式：
 
-```
+```text
 $$\sigma(z)=\frac{1}{1+e^{-x}}$$
 ```
 
@@ -102,6 +102,8 @@ export_on_save:
     plt.plot(x)
     plt.show() # show figure
     ```
+
+![result](/assets/image/mpe-1.png)
 
 当然，它好像还是有一些 BUG ，譬如下方的代码在笔者的电脑上运行之后，并不能正确地显示:
 
