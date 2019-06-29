@@ -80,6 +80,6 @@ $ conda install pinyin
 
 这个功能只是一个试验功能，所以只是放着玩一玩的，如果大家要更精确的汉译英，可以查找 python 如何使用在线翻译。
 
-### 5. 结语与其他文档
+### 5. 结语
 
 pinyin 模块就这样介绍完了。虽然比较简单，但也十分使用。很多时候，文本转拼音还是一件比较简单的事，但是要将拼音转化为文本就可以使用另外一个模块的功能： [Pinyin2Hanzi - Github](https://github.com/letiantian/Pinyin2Hanzi)

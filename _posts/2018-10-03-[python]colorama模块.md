@@ -57,6 +57,6 @@ print('auto set to normal now')
 
 -   Style: DIM, NORMAL, BRIGHT, RESET_ALL
 
-### 结语与其他文档
+### 结语
 
 只需要通过几个参数，就可以用 colorama 模块进行简单的颜色控制了。其实如同 `Fore.RED` 这样的模式只是保存了一个 ANSI 的编码。官方文档中就有比较详细的解释： [colorama-PyPI](https://pypi.org/project/colorama/)。如果想要更深层次地自定义，其实也可以自己将 ANSI 进行一定的封装来使用更多的颜色。

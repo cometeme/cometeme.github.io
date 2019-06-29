@@ -49,7 +49,7 @@ INFO: Building EXE from out00-EXE.toc completed successfully.
 -   \-i
     设置图标
 
-### 结语与其他文档
+### 结语
 
 用 `pyinstaller` 指令就可以把 python 程序打包成 exe 了，是不是特别简单呢。当然了， PyInstaller 不仅仅能做到产生 exe 文件，还可以产生不同平台的文件。下面引用一段官方的介绍：
 

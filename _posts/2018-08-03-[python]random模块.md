@@ -108,6 +108,6 @@ print(ls)
 
 返回值是 `['Mike', 'Jack', 'David']`
 
-### 结语与其他文档
+### 结语
 
 以上就是本教程的全部内容了。 random 模块还有其他拓展的内容，包括以上介绍的 `choices` 、 `shuffle` 函数都还有额外的参数可供选择。具体可以参考 [9.6. random — Generate pseudo-random numbers](https://docs.python.org/3/library/random.html) 。

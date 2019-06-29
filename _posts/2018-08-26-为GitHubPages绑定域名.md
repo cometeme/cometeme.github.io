@@ -47,6 +47,6 @@ tags: Web Github
 
 ![complete!](/assets/image/custom-domain-3.png)
 
-### 结语与其他文档
+### 结语
 
 这样，我们就给 Github Pages 绑定自己的域名了！不得不说， Github Pages 除了有些慢之外，它的设置可比自建服务器简单多了。如果你还想更进一步自定义自己的域名的话，可以参考它的官方文档： [Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) 。

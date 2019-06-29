@@ -5,7 +5,7 @@ subtitle: '强大好用的内置代码补全插件'
 date: 2019-06-29
 categories: vscode
 cover: '/assets/image/mpe-header.png'
-tags: vscode 插件
+tags: vscode 插件 Markdown
 ---
 
 在日常的写作中， Markdown 已经成为了我的首选工具。其简洁的语法，舒适的写作体验，以及美观的渲染结果，给我带来了很好的体验。然而，由于 Markdown 过于简洁，它本身支持的功能也比较少。在平时的记录中，我可能会需要在文档中插入一些公式或者符号，这时单纯地使用 Markdown 就无法实现了。

@@ -136,6 +136,6 @@ print(end - start)
 
 这样就实现了自定义时间文本输出的功能了。
 
-### 结语与其他文档
+### 结语
 
 关于 time 模块的使用就介绍到这里。当然了， time 模块还有很多好玩的函数。因为不是很常用，而且限于篇幅，就不再赘述了。有关 time 模块的其他的资料，大家可以看 [16.3. time — Time access and conversions](https://docs.python.org/3/library/time.html) 。

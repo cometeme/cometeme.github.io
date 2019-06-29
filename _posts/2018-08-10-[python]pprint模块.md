@@ -122,6 +122,6 @@ pp.pprint(ls)
 
 这大概就是 `pprint` 函数的功能了。
 
-### 结语与其他文档
+### 结语
 
 pprint 模块最重要的两个函数以及他们的参数都已经介绍完了。其实它还有一些其他的函数。就比如如果你不想直接输出列表，而是要获得一个字符串，那么 `pformat` 函数就可以帮助你。它还有 `isreadable` 和 `isrecursive` 函数来判断可读性和递归性。如果大家水平好的话可以自己研究一下这个模块其他函数的作用，在这里我就贴上链接： [pprint — Data pretty printer](https://docs.python.org/3/library/pprint.html)

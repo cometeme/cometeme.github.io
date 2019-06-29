@@ -93,6 +93,6 @@ pickle.load(f, encoding = 'gb2312')
 
 平时，我们可能并不会去使用这两个函数。不过其实在之后的使用中，它们可以用于在数据模块中存储 python 数据类型。例如 Redis 的键值并不能支持全部的 python 类型，但是如果用 `dumps()` 将一个二进制流传入，读取的时候再用`loads()` 完整取出，就可以简单地实现多种数据格式的存储。如果感兴趣的话可以看一下我的另外一个文档：[[python] redis 模块](/python/2018/08/python-redis模块.html)
 
-### 结语与其他文档
+### 结语
 
 学习了 pickle 的功能，我们可以猜想它的取名可能影射的是作者想要实现将数据“完整地放入”并“完整地取出”的功能，不过这也有可能是作者的一种情怀。看完 pickle 这个模块之后，你是不是对 python 存储数据有了更深的认识呢？当然如果大家想要更加深入地了解这一个模块，在 [12.1. pickle — Python object serialization](https://docs.python.org/3.7/library/pickle.html) 中也有安全提示、相关模块、支持类型等更详细的文档。

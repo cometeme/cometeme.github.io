@@ -140,6 +140,6 @@ infile.close()
 
 只需要多加几步，便可以实现遮罩的效果了。 wordcloud 这个模块的一个特点就是简单易用。
 
-### 结语与其他文档
+### 结语
 
 这样我们就完成了 wordcloud 的简单介绍了。当然，它还有许多更高级的用法，比如让生成的词云颜色符合原图的颜色，给遮罩描边等功能，都可以在它的 GitHub 示例中找到： [A little word cloud generator in Python](https://github.com/amueller/word_cloud)

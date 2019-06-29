@@ -85,6 +85,6 @@ version = 3.7.0
 
 `version` 可以指定 python 的版本，前提是你必须要安装这个版本。（比如你只装了 python3.6 ，那么你设置成 2.7 就会出错）
 
-### 结语与其他文档
+### 结语
 
 大约一千多字， venv 的这个模块的一些简单使用方法就已经介绍完了，简洁却又方便，这一直是 python 的特性。其实除了可以在控制台中使用外，它还可以作为一个模块在程序中使用。不过一般情况下我们只需要用控制台就可以了。如果大家还想深入研究，可以查看 [29.3. venv — Creation of virtual environments](https://docs.python.org/3/library/venv.html) 。
