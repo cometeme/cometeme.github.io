@@ -2,7 +2,7 @@
 title: 'cometeme的个人博客'
 description: '分享一些编程的学习笔记'
 keyword: 'cometeme, 技术, 博客, python, Adelard Collins, 深度学习'
-url: 'https://www.cometeme.tech' # your host
+url: 'https://www.adelardcollins.com' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''

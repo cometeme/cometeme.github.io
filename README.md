@@ -1,6 +1,6 @@
 # cometeme 的个人博客
 
-博客网址：<https://www.cometeme.tech>
+博客网址：<https://www.adelardcollins.com>
 
 博客的内容主要为：
 
