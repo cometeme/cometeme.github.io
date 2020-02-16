@@ -87,7 +87,7 @@ Gitalk 对象还有许多参数，其中较为常用的还有以下两个：
 
 其中的 `Application name` 可以随便填， `Homepage URL` 和 `Authorization callback URL` 需要填写你**博客网页**的网址。
 
-生成一个 GitHub Application 之后，网页会显示一个 clientID 和一个 clientSecret ，将其复制到代码中。其中这两个参数**只会显示一次**，所以一定记得填写完之后要保存代码。
+生成一个 GitHub Application 之后，网页会显示一个 clientID 和一个 clientSecret ，将其复制到代码中。如果忘记这两个参数，可以到 [Developer Applications](https://github.com/settings/developers) 里查看。
 
 ### 4. 连接你的 GitHub 账号并新建 issue
 
