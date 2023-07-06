@@ -1,8 +1,8 @@
 # Site settings 配置站点
 title: 'cometeme的个人博客'
 description: '分享一些编程的学习笔记'
-keyword: 'cometeme, 技术, 博客, python, Adelard Collins, 深度学习'
-url: 'https://www.adelardcollins.com' # your host
+keyword: 'cometeme, 技术, 博客, python, 深度学习'
+url: 'https://cometeme.github.io/' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
@@ -21,8 +21,9 @@ footer:
 # Author 配置博主信息
 author: 'cometeme'
 nickname: 'cometeme'
-bio: 'python/深度学习/UI设计/摄影'
-avatar: '/assets/image/profile.png'
+bio: '自然语言处理/深度学习/python/DIY/摄影'
+avatar: 'https://avatars.githubusercontent.com/u/22635759'
+# avatar: '/assets/image/profile.png'
 
 # Search
 search: true
@@ -32,9 +33,9 @@ nightMode: false
 
 # Comments 评论功能
 comments:
-  gitalk: true
-  gitalk_clientID: 'd278293f406e063360ab'
-  gitalk_Secret: 'a170994b48ac5f3e0d05a2ef47f2598a921d4e7c'
+  gitalk: false
+  gitalk_clientID: ''
+  gitalk_Secret: ''
   gitalk_repo: 'cometeme.github.io'
   gitalk_owner: 'cometeme'
   gitalk_admin: 'cometeme'
@@ -84,4 +85,6 @@ permalink: /:categories/:year/:month/:title.html
 #permalink: /:title.html
 
 # Plugins
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  # - jekyll-wikilinks
