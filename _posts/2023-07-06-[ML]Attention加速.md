@@ -34,6 +34,7 @@ tags: MachineLearning Efficient
 ![2](/assets/image/attention_acceleration/2.png)
 
 **优点**：设计简单，不需要引入外部模块
+
 **缺点**：需要依赖稀疏矩阵运算进行实质加速，对于硬件设备以及框架有一定要求。大多数稀疏 attention 的方法会破坏原始 pretrain 模型的效果，需要进行少量 pretrain 才能恢复较好的性能。
 
 ## 3. “线性” Attention
